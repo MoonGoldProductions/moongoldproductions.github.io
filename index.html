@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html data-ng-app="mgpApp">
+
+<head>
+    <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+    <script data-require="angular.js@*" data-semver="2.0.0-alpha.45" src="https://code.angularjs.org/2.0.0-alpha.45/angular2.js"></script>
+    <script data-require="angular.js@*" data-semver="2.0.0-alpha.45" src="app.js"></script>
+    <script data-require="jquery@*" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script data-require="bootstrap@*" data-semver="3.3.6" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script data-require="angular-route@*" data-semver="1.4.8" src="https://code.angularjs.org/1.4.8/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1 class="siteHeader1">
+          <font color="gold">MoonGold</font>
+          <font color="white">Productions</font>
+        </h1>
+            <h2 class="siteHeader2">
+          <font color="gold">Filmitegijad</font>
+          <font color="white">aastast 2011</font>
+        </h2>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <img src="img/Taust%201.jpg" />
+                <div class="navbar navbar-inverse navbar-static-top">
+                    <div class="container">
+                        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="collapse navbar-collapse navHeaderCollapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="#kodu"> KODU </a>
+                                </li>
+                                <li>
+                                    <a href="#teenused"> TEENUSED </a>
+                                </li>
+                                <li>
+                                    <a href="#projektid"> PROJEKTID </a>
+                                </li>
+                                <li>
+                                    <a href="#meiekohta"> MEIE KOHTA </a>
+                                </li>
+                                <li>
+                                    <a href="#kontakt"> KONTAKT </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div data-ng-view=""></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="navbar navbar-default">
+                    <div class="container-fluid center">
+                        <div class="col-xs-4">
+                            <p class="navbar-text pull-left">moongoldproductions[at]gmail.com
+                                <br> Eesti / Estonia</p>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="navbar-inner">
+                                <div class="collapse navbar-collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li>
+                                            <a href="https://www.facebook.com/pages/MoonGold-Productions/284465701592488/" target="_blank"> Facebook </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.youtube.com/user/MoonGoldProductions/" target="_blank"> Youtube </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="collapse navbar-collapse">
+                                <p class="navbar-text pull-right">© MoonGold Productions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
