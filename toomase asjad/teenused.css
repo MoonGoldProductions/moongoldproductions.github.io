@@ -18,7 +18,7 @@ h2{
     font-size: 2em;
 }
 
-section{
+/*section{
     border-style: solid;
     border-width: 10px;
     border-color:white;
@@ -29,11 +29,35 @@ section{
     -webkit-column-count: 2;
     -webkit-column-gap:60px;
     -webkit-column-rule:2px solid black;
-}
+}*/
 
 div{
     margin-left: 200px;
     margin-right: 200px;
     display: flex;
     flex-direction: row;
+}
+
+.ylemine{
+    border-style: solid;
+    border-width:10px;
+    border-color:white;
+    border-radius:5px;
+    padding:20px;
+    margin:20px;
+    margin-left: 220px;
+    margin-right: 220px;
+}
+
+#columns{
+    border-style:solid;
+    border-width:10px;
+    border-color:white;
+    border-radius:5px;
+    padding:20px;
+    margin:20px;
+    column-count:3;
+    -webkit-column-count:3;
+    -webkit-column-gap:60px;
+    -webkit-column-rule:2px solid black;
 }
