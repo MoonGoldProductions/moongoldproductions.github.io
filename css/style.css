@@ -8,6 +8,7 @@ body {
     height: 100%;
 }
 
+
 /* center the navbar*/
 
 .center.navbar .nav,
@@ -25,26 +26,48 @@ body {
     text-align: center;
 }
 
+
 /* Site header */
+
+/* Create table cell for centering text */
 
 .text-vertical-center {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+    padding-right: 35%;
+    padding-left: 5%;
+}
+
+
+/* Align text inside the cell left */
+
+.text-align-left {
+    display: inline-block;
+    text-align: left;
 }
 
 h1.siteHeader1 {
     font-size: 250%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
 }
 
-h2.siteHeader2 {
+h1.siteHeader2 {
     font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
 }
 
-h1,
-h2 {
-    line-height: 4px;
+/* Adjust header size when screen too small */
+
+@media only screen and (max-width: 390px) {
+    h1.siteHeader1 {
+        font-size: 8vw;
+    }
 }
+
+/* Opening screen */
 
 .header {
     display: table;
