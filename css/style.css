@@ -116,3 +116,9 @@ p.services{
 p.text{
     font-size: 20px;
 }
+
+.img-circle{
+    border-radius:50%;
+    width: 100px;
+    height: 100px;
+}
