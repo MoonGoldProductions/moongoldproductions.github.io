@@ -139,33 +139,107 @@ h1.siteHeader2 {
     -webkit-column-count: 4;
 }
 
+.image-circle-menu {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
 
-/* Services text and colums */
 
-.servicesBox {
-    /*border-style: solid;
-    border-width:10px;
-    border-radius:5px;*/
+/* News feed */
+
+.news-box {
+    padding: 0;
+    padding-left: 80px;
+    text-align: left;
+    background: url('/img/MGP_taust_blur.png') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.image-menu {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.news-col1 {
+    float: left;
+    display: block;
+    width: 600px;
+    height: 600px;
+}
+
+.news-col2 {
+    display: inline-block;
+    float: left;
+    width: 500px;
+    height: 600px;
+}
+
+.news-slideshow {
+    width: 600px;
+    height: 350px;
+}
+
+.news-slides {
+    width: 100%;
+    object-fit: cover
+}
+
+.slogan-text {
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 2px;
+    border-top-color: black;
+    display: inline-block;
+    width: 600px;
+    height: 250px;
+    padding: 30px;
+    padding-top: 50px;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ), url('/img/kaamera1.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.slogan {
+    font-size: 19px;
+}
+
+
+/* Services */
+
+.services-box {
     padding:20px;
-    /*margin:20px;
-    /*margin-left: 220px;
-    margin-right: 220px;*/
     text-align: center;
 }
 
 .columns-services {
-    border-style:solid;
-    border-width:10px;
-    border-color:white;
-    border-radius:5px;
-    padding:20px;
-    margin:20px;
-    column-count:3;
-    -webkit-column-count:3;
-    -webkit-column-gap:60px;
-    -webkit-column-rule:2px solid black;
-    -webkit-margin-before:0;
-    -webkit-margin-after:0;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    column-count: 3;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 60px;
+    -webkit-column-rule: 2px solid black;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
 }
 
 p.services {
@@ -178,16 +252,6 @@ p.text {
 
 .image-circle-services {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-.image-circle-menu {
-    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     width: 200px;
