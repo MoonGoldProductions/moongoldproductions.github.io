@@ -12,8 +12,8 @@ body {
     display: inline;
 }
 
-a:hover {
-    color: blueviolet;
+a:link:hover, a:visited:hover {
+    color: dodgerblue;
     text-decoration: none;
 }
 
@@ -22,7 +22,7 @@ a:link, a:visited {
     text-decoration: none;
 }
 
-a:active {
+a:link:active {
     color: darkblue;
     text-decoration: none
 }
@@ -103,14 +103,19 @@ a:active {
     border-radius: 0;
 }
 
-.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+.btn-primary.outline:visited:hover, .btn-primary.outline:focus, .open > .dropdown-toggle.btn-primary {
 	color: darkblue;
     background-color: gainsboro;
 }
 
-.btn-primary.outline:active, .btn-primary.outline.active {
+.btn-primary.outline:visited:active, .btn-primary.outline.active {
 	color: dodgerblue;
 	box-shadow: none;
+}
+
+.btn-primary.outline:visited {
+    background-color: #404040;
+    color: white;
 }
 
 /* Header text */
@@ -174,6 +179,13 @@ h1.siteHeader2 {
     height: 200px;
     overflow: hidden;
     border-radius: 50%;
+}
+
+a.menu-link:hover .image-circle-menu {
+    box-shadow:  0 0 10px 5px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 10px  5px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 0 10px 5px rgba(0,0,0,0.4);
+    -o-box-shadow: 0 0 10px 5px rgba(0,0,0,0.4);
 }
 
 p.menu-text-link {
