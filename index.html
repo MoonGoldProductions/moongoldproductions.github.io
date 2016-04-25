@@ -21,22 +21,10 @@
 </head>
 
 <body>
-    <!--Import Facebook-->
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/et_EE/sdk.js#xfbml=1&version=v2.6";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-
-    </script>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
 
     <header id="top" class="header">
         <div class="header-row">
@@ -56,90 +44,89 @@
         <div class="button-row">
             <div class="button-cell">
                 <div class="button-block">
-                    <button type="button" class="btn btn-primary btn-lg outline">Sisene</button>
+                    <a href="#menu">
+                        <button type="button" class="btn btn-primary btn-lg outline">Sisene</button>
+                    </a>
                 </div>
             </div>
         </div>
     </header>
     <section id="menu">
-        <div class="menu-box">
-            <div class="columns-menu">
-                <ul>
-                    <li>
-                        <figure class="image-circle-menu">
-                            <img src="img/kuu.jpg" alt="Pilt">
-                        </figure>
-                        <p class="services">Teated</p>
-                    </li>
-                    <li>
-                        <figure class="image-circle-menu">
-                            <img src="img/kaamera1.jpg" alt="Pilt">
-                        </figure>
-                        <p class="services">Teenused</p>
-                    </li>
-                    <li>
-                        <figure class="image-circle-menu">
-                            <img src="img/clapperboard.jpg" alt="Pilt">
-                        </figure>
-                        <p class="services">Projektid</p>
-                    </li>
-                    <li>
-                        <figure class="image-circle-menu">
-                            <img src="img/kontakt.jpg" alt="Pilt">
-                        </figure>
-                        <p class="services">Kontakt</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section id="news">
-        <div class="news-box">
-            <div class="row">
-                <div class="news-col1">
-                    <div class="news-slideshow">
-                        <!-- News screen slides -->
-                        <img class="news-slides" src="img/MGP_intro.png">
-                        <img class="news-slides" src="img/Slideshow/plakat.png">
-                        <img class="news-slides" src="img/Slideshow/esilinastus1.JPG">
-                        <img class="news-slides" src="img/Slideshow/esilinastus2.PNG">
-                        <img class="news-slides" src="img/Slideshow/esilinastus3.PNG">
-                        <img class="news-slides" src="img/Slideshow/stevenHF.PNG">
-                        <img class="news-slides" src="img/Slideshow/joonasHF.jpg">
-                    </div>
-                    <script>
-                        var myIndex = 0;
-                        carousel();
-
-                        function carousel() {
-                            var i;
-                            var x = document.getElementsByClassName("news-slides");
-                            for (i = 0; i < x.length; i++) {
-                                x[i].style.display = "none";
-                            }
-                            myIndex++;
-                            if (myIndex > x.length) {
-                                myIndex = 1
-                            }
-                            x[myIndex - 1].style.display = "block";
-                            setTimeout(carousel, 7000); // Change image every 7 seconds
-                        }
-
-                    </script>
-                    <div class="slogan-text">
-                        <h class="slogan">
-                            <font color="gold">MoonGold Productions</font>
-                            <font color="white">on grupp huvilistest filmitegijaid, kes tegelevad filmide ja videote valmistamisega. Meil on tihti käsil suuremad filmiprojektid ning meeleldi tegeleme ka tellimustöödega. Meie valdkonnaks on kõik filmindusega seonduv alates filmimisest kuni videotöötluseni.</font>
-                        </h>
-                    </div>
-                </div>
-                <div class="news-col2">
-                    <div class="fb-page" data-href="https://www.facebook.com/MoonGold-Productions-284465701592488/" data-tabs="timeline" data-width="500px" data-height="600px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"></div>
+        <div class="content-wrapper">
+            <div class="menu-box">
+                <div class="columns-menu">
+                    <ul>
+                        <li>
+                            <a href="#news">
+                                <figure class="image-circle-menu">
+                                    <img src="img/kuu.jpg" alt="Pilt">
+                                </figure>
+                                <p class="menu-text-link">Teated</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services">
+                                <figure class="image-circle-menu">
+                                    <img src="img/kaamera1.jpg" alt="Pilt">
+                                </figure>
+                                <p class="services">Teenused</p>
+                            </a>
+                        </li>
+                        <li>
+                            <figure class="image-circle-menu">
+                                <img src="img/clapperboard.jpg" alt="Pilt">
+                            </figure>
+                            <p class="services">Projektid</p>
+                        </li>
+                        <li>
+                            <figure class="image-circle-menu">
+                                <img src="img/kontakt.jpg" alt="Pilt">
+                            </figure>
+                            <p class="services">Kontakt</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-    <section id="teenused">
+    <section id="news" class="news-background">
+        <div class="content-wrapper">
+            <div class="news-content-background">
+                <div class="row">
+                    <div class="news-header">
+                        <h3 class="news-header-text">Teated</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="news-col1">
+                        <figure class="news-img-box">
+                            <img src="img/News/TV3.png" alt="Pilt" class="news-img">
+                        </figure>
+                        <div class="news-text-box">
+                            <p class="news-head">Dokumentaalfilm "Häädemeeste fenomen" peagi TV3-es!</p>
+                            <p class="news-text">MTÜ MoonGold sõlmis Eesti telekanali TV3-ega lepingu, mille alusel lubame edastada dokumentaalfilmi "Häädemeeste fenomen" televisioonis. Täpne eetriaeg pole hetkel veel teada, kuid filmi peaks saama näha vahemikus mai kuni september.
+                                <br>Anname kindlasti teada, kui konkreetse aja teada saame.
+                                <br>
+                                <br>Tasub aga teada, et eetrisse jõuab vaid filmi lühendatud versioon. Täispikka versiooni on võimalik näha MGP üritustel ning soetada DVD-na.</p>
+                        </div>
+                    </div>
+                    <div class="news-col2">
+                        <figure class="news-img-box">
+                            <img src="img/News/HFplakat.png" alt="Pilt" class="news-img">
+                        </figure>
+                        <div class="news-text-box">
+                            <p class="news-head">Dokumentaalfilmi "Häädemeeste fenomen" saab nüüd soetada ka DVD peal.</p>
+                            <p class="news-text">Anname hea meelega teada, et MGP vastvalminud dokumentaalfilmi "Häädemeeste fenomen" on nüüdsest võimalik soetada ka DVD peal. DVD'd on võimalik osta kõikidel üritustel, kus toimub filmi näitamine ning peagi ka interneti vahendusel. Internetist tellides on DVD hinnaks 8€.
+                                <br>
+                                <br>DVD sisaldab täispikka versiooni filmist ning on esialgu vaid eestikeelne.
+                                <br>Teatame, kui ka meie veebilehelt DVD'd on võimalik osta.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="content-wrapper">
         <div class="services-box">
             <div class="services-text">
                 <p class="text">
