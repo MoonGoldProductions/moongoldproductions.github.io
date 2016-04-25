@@ -1,27 +1,15 @@
-var app = angular.module('mgpApp', []);
+$(function () {
+    $('a[href*=#]:not([href=#])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
-app.config(['$routeProvider',
-  function ($routeProvider) {
-        $routeProvider.
-        when('/kodu', {
-            templateUrl: 'view-kodu.html',
-            controller: 'koduCtrl'
-        }).
-        when('/teenused', {
-            templateUrl: 'view-teenused.html'
-        }).
-        when('/projektid', {
-            templateUrl: 'view-projektid.html'
-        }).
-        otherwise({
-            redirectTo: '/kodu',
-            controller: 'koduCtrl'
-        });
-  }
-]);
-
-app.controller('koduCtrl',
-    function ($scope) {
-
-    }
-);
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});

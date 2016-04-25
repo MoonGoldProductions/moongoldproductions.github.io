@@ -8,6 +8,33 @@ body {
     height: 100%;
 }
 
+.row {
+    display: inline;
+}
+
+a:hover {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:active {
+    color: darkblue;
+    text-decoration: none
+}
+
+
+/* Use this wrapper for all the content on the webpage */
+
+.content-wrapper {
+    margin: 0 auto;
+    width: 1100px;
+}
+
 
 /* center the navbar*/
 
@@ -149,13 +176,25 @@ h1.siteHeader2 {
     border-radius: 50%;
 }
 
+p.menu-text-link {
+    font-size: 25px;
+}
+
 
 /* News feed */
 
-.news-box {
-    padding: 0;
-    padding-left: 80px;
-    text-align: left;
+.news-header {
+    background-color: dimgray;
+    display: inline-block;
+    padding-left: 25px;
+    width: 1100px;
+}
+
+.news-header-text {
+    color: lightgray;
+}
+
+.news-background {
     background: url('/img/MGP_taust_blur.png') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -163,67 +202,64 @@ h1.siteHeader2 {
     -o-background-size: cover;
 }
 
-.image-menu {
-    margin: 0;
-    padding: 0;
-    width: 300px;
-    height: 600px;
-    overflow: hidden;
+.news-content-background {
+    background-color: lightgray;
 }
 
 .news-col1 {
+    border-width: 1px;
+    border-color: lightgray;
+    border-right-color: darkgray;
+    border-style: solid;
+    display: inline-block;
     float: left;
-    display: block;
-    width: 600px;
-    height: 600px;
+    width: 550px;
+    height: 530px;
 }
 
 .news-col2 {
+    border-width: 1px;
+    border-color: lightgray;
+    border-left-color: darkgray;
+    border-style: solid;
     display: inline-block;
     float: left;
-    width: 500px;
-    height: 600px;
+    width: 550px;
+    height: 530px;
 }
 
-.news-slideshow {
-    width: 600px;
-    height: 350px;
-}
-
-.news-slides {
-    width: 100%;
-    object-fit: cover
-}
-
-.slogan-text {
-    border-style: solid;
-    border-width: 0;
-    border-top-width: 2px;
-    border-top-color: black;
-    display: inline-block;
-    width: 600px;
+.news-img-box {
+    margin: 0;
+    width: 548px;
     height: 250px;
-    padding: 30px;
-    padding-top: 50px;
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.7), 
-      rgba(0, 0, 0, 0.7)
-    ), url('/img/kaamera1.jpg') no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    overflow: hidden;
 }
 
-.slogan {
-    font-size: 19px;
+.news-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.news-text-box {
+    width: 548px;
+    height: 278px;
+    padding: 20px;
+}
+
+.news-head {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.news-text {
+    font-size: 15px;
 }
 
 
 /* Services */
 
 .services-box {
-    padding:20px;
+    padding: 20px;
     text-align: center;
 }
 
