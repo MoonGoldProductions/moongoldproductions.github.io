@@ -4,11 +4,8 @@
 
 <head>
     <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
-    <script data-require="jquery@*" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.js"></script>
-    <script data-require="bootstrap@*" data-semver="3.3.6" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -18,11 +15,6 @@
 </head>
 
 <body>
-    <!-- Import jQuery before materialize.js -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="js/script.js"></script>
-
     <header id="top" class="header">
         <div class="header-row">
             <div class="header-cell">
@@ -160,75 +152,44 @@
         </div>
     </section>
 
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="navbar navbar-inverse navbar-static-top">
-                    <div class="container">
-                        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <div class="collapse navbar-collapse navHeaderCollapse">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li>
-                                    <a href="#kodu"> KODU </a>
-                                </li>
-                                <li>
-                                    <a href="#teenused"> TEENUSED </a>
-                                </li>
-                                <li>
-                                    <a href="#projektid"> PROJEKTID </a>
-                                </li>
-                                <li>
-                                    <a href="#meiekohta"> MEIE KOHTA </a>
-                                </li>
-                                <li>
-                                    <a href="#kontakt"> KONTAKT </a>
-                                </li>
-                            </ul>
-                        </div>
+    <section id="footer" class="footer">
+        <div class="navbar navbar-default">
+            <div class="content-wrapper">
+                <div class="row">
+                    <div class="footer-col footer-text-col">
+                        <p class="footer-text">Eesti / Estonia</p>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div data-ng-view=""></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="navbar navbar-default">
-                    <div class="container-fluid center">
-                        <div class="col-xs-4">
-                            <p class="navbar-text pull-left">moongoldproductions[at]gmail.com
-                                <br> Eesti / Estonia</p>
-                        </div>
-                        <div class="col-xs-4">
-                            <div class="navbar-inner">
-                                <div class="collapse navbar-collapse">
-                                    <ul class="nav navbar-nav">
-                                        <li>
-                                            <a href="https://www.facebook.com/pages/MoonGold-Productions/284465701592488/" target="_blank"> Facebook </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.youtube.com/user/MoonGoldProductions/" target="_blank"> Youtube </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-4">
-                            <div class="collapse navbar-collapse">
-                                <p class="navbar-text pull-right">© MoonGold Productions</p>
-                            </div>
-                        </div>
+                    <div class="footer-col">
+                        <a href="#menu">
+                            <figure class="icon">
+                                <img src="img/Icons/BackToTop.png" alt="Üles">
+                            </figure>
+                        </a>
+                        <a href="https://www.facebook.com/pages/MoonGold-Productions/284465701592488/" target="_blank">
+                            <figure class="icon">
+                                <img src="img/Icons/Facebook.png" alt="Facebook">
+                            </figure>
+                        </a>
+                        <a href="https://www.youtube.com/user/MoonGoldProductions/" target="_blank">
+                            <figure class="icon">
+                                <img src="img/Icons/YouTube.ico" alt="YouTube">
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="footer-col footer-text-col">
+                        <p class="footer-text">© MoonGold Productions</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Import jQuery before materialize.js -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+    <script data-require="jquery@*" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script data-require="bootstrap@*" data-semver="3.3.6" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 
 </html>
