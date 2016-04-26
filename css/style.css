@@ -103,7 +103,7 @@ a:link:active {
     border-radius: 0;
 }
 
-.btn-primary.outline:visited:hover, .btn-primary.outline:focus, .open > .dropdown-toggle.btn-primary {
+.btn-primary.outline:visited:hover, .btn-primary.outline:link:hover, .btn-primary.outline:focus, .open > .dropdown-toggle.btn-primary {
 	color: darkblue;
     background-color: gainsboro;
 }
@@ -113,7 +113,7 @@ a:link:active {
 	box-shadow: none;
 }
 
-.btn-primary.outline:visited {
+.btn-primary.outline:visited, .btn-primary.outline:link {
     background-color: #404040;
     color: white;
 }
@@ -313,4 +313,34 @@ img {
     margin: 0 auto;
     height: 100%;
     width: auto;
+}
+
+
+/* footer */
+
+.footer {
+    margin-top: 50px;
+}
+
+.footer-col {
+    margin: 0;
+    margin-top: 4px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    width: 366px;
+}
+
+.footer-text-col {
+    margin-top: 23px;
+}
+
+.footer-text {
+    color: gray;
+}
+
+.icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
 }
