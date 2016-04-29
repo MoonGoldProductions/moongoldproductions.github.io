@@ -12,6 +12,9 @@ body {
     display: inline;
 }
 
+
+/* Link styling */
+
 a:link:hover, a:visited:hover {
     color: dodgerblue;
     text-decoration: none;
@@ -41,8 +44,6 @@ a:link:active {
 .navbar-fixed-top {
     background-color: black;
     border-width: 0;
-    border-bottom-width: 1px;
-    border-color: dimgray;
     height: auto;
 }
 
@@ -59,9 +60,20 @@ a:link:active {
 }
 
 
-/* Site header */
-
+/* Opening screen */
 /* Table structure */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('/img/Taust%202.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
 
 .header-row {
     display: table-row;
@@ -97,7 +109,7 @@ a:link:active {
     bottom: 0;
 }
 
-/* Open screen menu button */
+/* Opening screen menu button */
 
 .btn.outline {
 	background-color: #404040;
@@ -143,20 +155,6 @@ h1.siteHeader2 {
     h1.siteHeader1 {
         font-size: 8vw;
     }
-}
-
-/* Opening screen */
-
-.header {
-    display: table;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: url('/img/Taust%202.jpg') no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
 }
 
 
@@ -320,7 +318,7 @@ img {
 }
 
 
-/* footer */
+/* Site footer */
 
 .footer {
     margin-top: 50px;
@@ -342,6 +340,9 @@ img {
 .footer-text {
     color: gray;
 }
+
+
+/* Icons, e.g. Facebook, YouTube */
 
 .icon {
     display: inline-block;

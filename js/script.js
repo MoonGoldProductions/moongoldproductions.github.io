@@ -14,3 +14,27 @@ $(function () {
         }
     });
 });
+
+// Fade in #navbar, when news section is reached and vice versa
+(function ($) {
+    $(document).ready(function () {
+        
+        // the height from where #navbar shall be displayed
+        var height = document.getElementById("news").offsetTop - document.getElementById("navbar").offsetHeight + 49;
+
+        // hide #navbar first
+        $("#navbar").hide();
+
+        // fade in and out #navbar
+        $(function () {
+            $(window).scroll(function () {
+                // set distance user needs to scroll before we fadeIn #navbar
+                if ($(this).scrollTop() > height) {
+                    $('#navbar').fadeIn(200);
+                } else {
+                    $('#navbar').fadeOut(200);
+                }
+            });
+        });
+    });
+}(jQuery));
