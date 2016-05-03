@@ -13,19 +13,19 @@ body {
 }
 
 
-/* Link styling */
+/* Site button styling */
 
-a:link:hover, a:visited:hover {
+a.site-button:link:hover, a.site-button:visited:hover {
     color: dodgerblue;
     text-decoration: none;
 }
 
-a:link, a:visited {
+a.site-button:link, a.site-button:visited {
     color: black;
     text-decoration: none;
 }
 
-a:link:active {
+a.site-button:link:active {
     color: darkblue;
     text-decoration: none
 }
@@ -68,7 +68,7 @@ a:link:active {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url('/img/Taust%202.jpg') no-repeat center center scroll;
+    background: url('/img/Style/Taust%202.jpg') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -225,7 +225,7 @@ p.menu-text-link {
 }
 
 .news-background {
-    background: url('/img/MGP_taust_blur.png') no-repeat center center scroll;
+    background: url('/img/MGP/MGP_taust_blur.png') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -288,27 +288,53 @@ p.menu-text-link {
 
 /* Services */
 
+.services-header {
+    background-color: dimgray;
+    display: inline-block;
+    width: 100%;
+}
+
+.services-header-text {
+    color: lightgray;
+    padding-left: 25px;
+}
+
+.services-background {
+    background-color: lightgray;
+}
+
 .services-box {
     padding: 20px;
     text-align: center;
 }
 
-.columns-services {
-    border-style: solid;
-    border-width: 10px;
-    border-color: white;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 20px;
-    column-count: 3;
-    -webkit-column-count: 3;
-    -webkit-column-gap: 60px;
-    -webkit-column-rule: 2px solid black;
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
+.services-row {
+    margin: 0;
+    margin-top: 40px;
+    height: 550px;
+    text-align: center;
 }
 
-p.services {
+.services-col {
+    display: inline-block;
+    width: 350px;
+    height: auto;
+    float: left;
+}
+
+.services-col-middle {
+    display: inline-block;
+    width: 350px;
+    height: 530px;
+    float: left;
+    border-style: solid;
+    border-width: 0;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-color: gray;
+}
+
+p.services-title {
     font-size: 25px;
 }
 
@@ -331,6 +357,45 @@ img {
     margin: 0 auto;
     height: 100%;
     width: auto;
+}
+
+.services-head-text {
+    text-align: center;
+}
+
+.services-text-box {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 15px;
+    text-align: left;
+}
+
+.services-text {
+    font-size: 17px;
+}
+
+.services-bullet li:before {
+    /* Using a Bootstrap glyphicon as the bullet point */
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 17px;
+    margin-top: 4px;
+    color: gold;
+}
+
+.services-bullet li {
+    text-align: left;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.services-bullet {
+    margin: 0;
+    margin-top: 35px;
+    padding: 0;
+    padding-left: 20px;
 }
 
 
