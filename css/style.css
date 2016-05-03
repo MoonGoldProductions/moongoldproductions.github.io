@@ -86,27 +86,41 @@ a:link:active {
 
 .header-cell {
     display: table-cell;
-    text-align: center;
     vertical-align: middle;
+}
+
+.header-logo-col {
+    float: left;
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 20px;
+}
+
+.header-text-col {
+    float: left;
 }
 
 .button-cell {
     display: table-cell;
+    text-align: center;
 }
 
-.header-block {
+.entry-button-block {
     display: inline-block;
-    text-align: left;
-    padding-right: 35%;
-    padding-left: 5%;
-}
-
-.button-block {
-    display: inline-block;
-    position: absolute;
+    padding: 0;
     padding-bottom: 15px;
-    padding-left: 45%;
-    bottom: 0;
+}
+
+.social-media-block {
+    display: inline-block;
+    padding: 0;
+    padding-top: 2px;
+}
+
+.header-logo {
+    height: 110px;
+    width: auto;
+    margin: 0;
 }
 
 /* Opening screen menu button */
@@ -140,13 +154,15 @@ a:link:active {
 h1.siteHeader1 {
     font-size: 250%;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
     margin-bottom: 5px;
+    margin-top: 26px;
 }
 
 h1.siteHeader2 {
     font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 5px;
+    margin: 2px;
 }
 
 /* Adjust header size when screen too small */
