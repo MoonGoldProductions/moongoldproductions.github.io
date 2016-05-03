@@ -111,6 +111,11 @@ a.site-button:link:active {
     padding-bottom: 15px;
 }
 
+.social-media-cell {
+    display: table-cell;
+    text-align: right;
+}
+
 .social-media-block {
     display: inline-block;
     padding: 0;
@@ -338,8 +343,9 @@ p.services-title {
     font-size: 25px;
 }
 
-p.text {
+p.head-text {
     font-size: 20px;
+    text-align: left;
 }
 
 .image-circle-services {
@@ -396,6 +402,36 @@ img {
     margin-top: 35px;
     padding: 0;
     padding-left: 20px;
+}
+
+
+/* Projects */
+
+.projects-videos-box {
+    text-align: center;
+    height: 320px;
+}
+
+.projects-videos-col1 {
+    width: 550px;
+    height: auto;
+    float: left;
+    padding: 10px;
+    padding-left: 5px;
+}
+
+.projects-videos-col2 {
+    width: 550px;
+    height: auto;
+    float: left;
+    padding: 10px;
+    padding-right: 5px;
+}
+
+.video-section-title {
+    padding: 3px;
+    padding-left: 5px;
+    padding-top: 7px;
 }
 
 
