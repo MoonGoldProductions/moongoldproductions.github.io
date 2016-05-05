@@ -27,7 +27,11 @@ a.site-button:link, a.site-button:visited {
 
 a.site-button:link:active {
     color: darkblue;
-    text-decoration: none
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 
@@ -59,7 +63,7 @@ a.site-button:link:active {
 /* Opening screen */
 /* Table structure */
 
-.header {
+.opening-screen {
     display: table;
     position: relative;
     width: 100%;
@@ -482,7 +486,7 @@ img {
     height: auto;
     float: left;
     padding: 10px;
-    padding-left: 5px;
+    padding-left: 2px;
 }
 
 .projects-videos-col2 {
@@ -490,7 +494,7 @@ img {
     height: auto;
     float: left;
     padding: 10px;
-    padding-right: 5px;
+    padding-right: 2px;
 }
 
 .video-section-title {
