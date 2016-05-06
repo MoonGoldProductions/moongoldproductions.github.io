@@ -6,7 +6,6 @@ $(function () {
             var offset = 50;
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            var test = target.selector;
             if (target.selector === "#menu") {
                 offset = 0;
             }
@@ -20,7 +19,7 @@ $(function () {
     });
 });
 
-// Fade in #navbar, when news section is reached and vice versa
+// Fade in #navbar, when news section is reached and vice versa.
 (function ($) {
     $(document).ready(function () {
 
@@ -43,3 +42,8 @@ $(function () {
         });
     });
 }(jQuery));
+
+// Parallax effect.
+$(document).ready(function () {
+    $('.parallax').parallax();
+});
