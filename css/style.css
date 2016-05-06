@@ -43,6 +43,16 @@ a:link {
 }
 
 
+/* Site image styling */
+
+.site-img {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+
 /* Fixed top navbar */
 
 .navbar-fixed-top {
@@ -68,11 +78,12 @@ a:link {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url('/img/Style/Taust%202.jpg') no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+}
+
+.opening-background-img {
+    margin: 0;
+    margin-bottom: 50px;
+    width: 110%;
 }
 
 .header-row {
@@ -222,14 +233,14 @@ p.menu-text-link {
 /* News feed */
 
 .news-header {
-    background-color: dimgray;
+    background-color: lightgray;
     display: inline-block;
     padding-left: 25px;
     width: 1100px;
 }
 
 .news-header-text {
-    color: lightgray;
+    color: black;
 }
 
 .news-background {
@@ -238,12 +249,14 @@ p.menu-text-link {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: dimgray;
 }
 
 .news-box {
     background-color: lightgray;
-    margin: 0;
-    margin-bottom: 50px;
 }
 
 .news-col1 {
@@ -298,16 +311,10 @@ p.menu-text-link {
 
 /* Quote */
 
-.quote-background {
-    background: url('/img/Style/Taust%201.jpg') no-repeat center scroll;
-    background-position: 50% 70%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    height: 380px;
+.quote-background-img {
     margin: 0;
     margin-bottom: 50px;
+    width: 101%;
 }
 
 .quote-table {
@@ -361,14 +368,16 @@ p.menu-text-link {
 /* Services */
 
 .services-header {
-    background-color: dimgray;
+    background-color: lightgray;
     display: inline-block;
     width: 100%;
 }
 
 .services-header-text {
-    color: lightgray;
+    color: black;
     padding-left: 25px;
+    padding-bottom: 19px;
+    margin-bottom: 0;
 }
 
 .services-background {
@@ -376,10 +385,14 @@ p.menu-text-link {
 }
 
 .services-box {
+    border-width: 0;
+    border-top-width: 1px;
+    border-style: solid;
+    border-color: darkgray;
     padding: 20px;
     text-align: center;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .services-row {
@@ -427,13 +440,6 @@ p.head-text {
     border-radius: 50%;
 }
 
-img {
-    display: block;
-    margin: 0 auto;
-    height: 100%;
-    width: auto;
-}
-
 .services-head-text {
     text-align: center;
 }
@@ -476,7 +482,18 @@ img {
 
 /* Projects */
 
+.projects-header {
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+}
+
 .projects-box {
+    border-width: 0;
+    border-top-width: 1px;
+    border-style: solid;
+    border-color: darkgray;
     padding: 0;
     padding-bottom: 50px;
 }
