@@ -422,120 +422,61 @@ p.services-text {
     border-color: dimgray;
 }
 
-.projects-header {
-    background-color: white;
-    display: inline-block;
-    width: 100%;
-    margin: 0;
-}
-
-.projects-box {
-    border-width: 0;
-    border-top-width: 1px;
-    border-style: solid;
-    border-color: darkgray;
-    padding: 0;
-    padding-bottom: 50px;
-}
-
-.projects-videos-box {
-    text-align: center;
-    height: 320px;
-}
-
-.projects-videos-col1 {
-    width: 550px;
-    height: auto;
-    float: left;
-    padding: 10px;
-    padding-left: 2px;
-}
-
-.projects-videos-col2 {
-    width: 550px;
-    height: auto;
-    float: left;
-    padding: 10px;
-    padding-right: 2px;
-}
-
 .video-section-title {
     padding: 3px;
     padding-left: 15px;
     padding-top: 7px;
 }
 
+.bottom-video-col {
+    margin-bottom: 60px;
+}
 
-<<<<<<< HEAD
-=======
+
 /* About us */
-.about-us-background{
+
+.about-us-background {
     background-color: lightgray;
 }
 
-.about-us-header{
-    background-color: lightgray;
-    display: inline-block;
-    width: 100%;
+.about-us-header {
+    
 }
 
-.about-us-box {
-    border-width: 0;
-    border-style: solid;
-    border-color: darkgray;
-    padding: 20px;
-    text-align: left;
-    margin: 0;
-    margin-bottom: 30px;
-    margin-top: 0px;
-    height: 700px;
-}
-
-.about-us-box-left{
-    display: inline-block;
-    width: 600px;
-    height: auto;
-    float: left;
-    text-align: left;
-}
-
-.about-us-box-right{
-    display: inline-block;
-    width: 400px;
-    height: auto;
-    float: right;
+.faces-col {
+    margin-top: -50px;
     text-align: center;
-    border-style: solid;
-    border-width: 0;
-    border-left-width: 1px;
-    border-color: gray;
 }
 
-.about-us-text{
-    font-size: 17px;
+.faces-row {
+    margin-top: 0;
+    padding-top: 0;
 }
 
-.about-us-header-text{
-    color: black;
-    padding-left: 25px;
-    padding-bottom: 19px;
-    margin-bottom: 0;
+.image-circle-about-us {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
-.faces-text{
-    font-size: 20px;
-    font-weight: 700;
+.about-us-text {
+    text-align: left;
+    font-size: 15px;
 }
 
-/* Contact */
-
-.contact-box {
+.faces-text {
+    margin: 0;
+    margin-top: 15px;
     padding: 0;
-    padding-bottom: 50px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 
->>>>>>> refs/remotes/origin/master
 /* Site footer */
 
 .footer {
