@@ -35,14 +35,6 @@ a:link {
 }
 
 
-/* Use this wrapper for all the content on the webpage */
-
-.content-wrapper {
-    margin: 0 auto;
-    width: 1100px;
-}
-
-
 /* Site image styling */
 
 .site-img {
@@ -53,12 +45,29 @@ a:link {
 }
 
 
+/* Site section headers */
+
+.section-header-col {
+    padding: 0;
+    padding-left: 20px;
+    margin: 0;
+    margin-top: -20px;
+    margin-bottom: -10px;
+}
+
+.section-header-text {
+    color: black;
+    font-size: 40px;
+}
+
+
 /* Fixed top navbar */
 
 .navbar-fixed-top {
     background-color: black;
     border-width: 0;
     height: auto;
+    font-size: 15px;
 }
 
 .navbar .nav > li > a:link {
@@ -71,28 +80,40 @@ a:link {
 
 
 /* Opening screen */
-/* Table structure */
 
-.opening-screen {
-    display: table;
-    position: relative;
-    width: 100%;
+.opening-screen-container {
     height: 100%;
+    width: 100%;
+    display: table;
 }
 
-.opening-background-img {
-    margin: 0;
-    margin-bottom: 50px;
-    width: 110%;
-}
-
-.header-row {
-    display: table-row;
+.opening-screen-bg {
+    background: url('/img/Style/Taust%202.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100%;
 }
 
 .button-row {
     display: table-row;
-    height: 0px;
+    height: 10%;
+    width: 100%;
+}
+
+.social-media-cell {
+    display: table-cell;
+    text-align: right;
+}
+
+.opening-screen-icon {
+    margin: 0;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.header-row {
+    display: table-row;
+    height: 80%;
+    width: 100%;
 }
 
 .header-cell {
@@ -101,36 +122,8 @@ a:link {
 }
 
 .header-logo-col {
-    float: left;
-    margin: 0;
-    margin-left: 10%;
-    margin-right: 20px;
-}
-
-.header-text-col {
-    float: left;
-}
-
-.button-cell {
-    display: table-cell;
-    text-align: center;
-}
-
-.entry-button-block {
-    display: inline-block;
-    padding: 0;
-    padding-bottom: 15px;
-}
-
-.social-media-cell {
-    display: table-cell;
-    text-align: right;
-}
-
-.social-media-block {
-    display: inline-block;
-    padding: 0;
-    padding-top: 2px;
+    margin-right: -25px;
+    margin-left: 5%;
 }
 
 .header-logo {
@@ -139,30 +132,39 @@ a:link {
     margin: 0;
 }
 
-/* Opening screen menu button */
-
-.btn.outline {
-	background-color: #404040;
+.entry-button-cell {
+    display: table-cell;
+    text-align: center;
 }
 
-.btn-primary.outline {
-	color: white;
-    border-radius: 0;
+/* Opening screen entry button */
+
+.entry-btn {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 7px;
+    padding-left: 9px;
+    font-size: 21px;
+    line-height: 1.45;
+    border-radius: 50%;
+    border-width: 0;
 }
 
-.btn-primary.outline:visited:hover, .btn-primary.outline:link:hover, .btn-primary.outline:focus, .open > .dropdown-toggle.btn-primary {
-	color: darkblue;
-    background-color: gainsboro;
+a.entry-btn:link:hover, a.entry-btn:visited:hover {
+    text-decoration: none;
+    color: dodgerblue;
+    background-color: lightgray;
 }
 
-.btn-primary.outline:visited:active, .btn-primary.outline.active {
-	color: dodgerblue;
-	box-shadow: none;
+a.entry-btn:link, a.entry-btn:visited {
+    text-decoration: none;
+    background-color: dimgray;
+    color: gold;
 }
 
-.btn-primary.outline:visited, .btn-primary.outline:link {
-    background-color: #404040;
-    color: white;
+a.entry-btn:link:active {
+    text-decoration: none;
 }
 
 /* Header text */
@@ -192,20 +194,14 @@ h1.siteHeader2 {
 
 /* Menu */
 
-.menu-box {
-    text-align: center;
+.menu-container {
     padding: 0;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
-.columns-menu {
-    border-width: 10px;
-    border-color: white;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 20px;
-    -webkit-column-count: 5;
+.col-center {
+    text-align: center;
 }
 
 .image-circle-menu {
@@ -232,15 +228,8 @@ p.menu-text-link {
 
 /* News feed */
 
-.news-header {
+.news-container {
     background-color: lightgray;
-    display: inline-block;
-    padding-left: 25px;
-    width: 1100px;
-}
-
-.news-header-text {
-    color: black;
 }
 
 .news-background {
@@ -255,35 +244,16 @@ p.menu-text-link {
     border-color: dimgray;
 }
 
-.news-box {
-    background-color: lightgray;
-}
-
-.news-col1 {
-    border-width: 1px;
-    border-color: lightgray;
-    border-right-color: darkgray;
-    border-style: solid;
-    display: inline-block;
-    float: left;
-    width: 550px;
-    height: 530px;
-}
-
-.news-col2 {
-    border-width: 1px;
-    border-color: lightgray;
-    border-left-color: darkgray;
-    border-style: solid;
-    display: inline-block;
-    float: left;
-    width: 550px;
-    height: 530px;
+.news-col {
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .news-img-box {
     margin: 0;
-    width: 548px;
+    width: 100%;
     height: 250px;
     overflow: hidden;
 }
@@ -311,17 +281,16 @@ p.menu-text-link {
 
 /* Quote */
 
-.quote-background-img {
-    margin: 0;
-    margin-bottom: 50px;
-    width: 101%;
+.quote-container {
+    display: table;
+    width: 100%;
+    height: 380px;
 }
 
-.quote-table {
-    display: table;
-    position: relative;
-    width: 100%;
-    height: 100%;
+.quote-bg {
+    background: url('/img/Style/Taust%201.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: 0 60%;
 }
 
 .quote-row {
@@ -367,67 +336,37 @@ p.menu-text-link {
 
 /* Services */
 
-.services-header {
-    background-color: lightgray;
-    display: inline-block;
-    width: 100%;
-}
-
-.services-header-text {
-    color: black;
-    padding-left: 25px;
-    padding-bottom: 19px;
-    margin-bottom: 0;
-}
-
 .services-background {
     background-color: lightgray;
 }
 
-.services-box {
-    border-width: 0;
-    border-top-width: 1px;
-    border-style: solid;
-    border-color: darkgray;
-    padding: 20px;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 30px;
-}
-
-.services-row {
-    margin: 0;
-    margin-top: 40px;
-    height: 550px;
-    text-align: center;
-}
-
 .services-col {
-    display: inline-block;
-    width: 350px;
-    height: auto;
-    float: left;
+    text-align: center;
 }
 
 .services-col-middle {
-    display: inline-block;
-    width: 350px;
-    height: 530px;
-    float: left;
+    text-align: center;
     border-style: solid;
     border-width: 0;
     border-left-width: 1px;
     border-right-width: 1px;
-    border-color: gray;
+    border-color: dimgray;
 }
 
 p.services-title {
     font-size: 25px;
 }
 
-p.head-text {
+p.services-head-text {
+    border-width: 0;
+    border-top-width: 1px;
+    border-style: solid;
+    border-color: dimgray;
     font-size: 20px;
-    text-align: left;
+    text-align: center;
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .image-circle-services {
@@ -440,21 +379,12 @@ p.head-text {
     border-radius: 50%;
 }
 
-.services-head-text {
-    text-align: center;
-}
-
-.services-text-box {
-    margin: 0;
-    margin-top: 20px;
+p.services-text {
+    font-size: 17px;
+    text-align: left;
     padding: 0;
     padding-left: 20px;
-    padding-right: 15px;
-    text-align: left;
-}
-
-.services-text {
-    font-size: 17px;
+    padding-top: 15px;
 }
 
 .services-bullet li:before {
@@ -467,6 +397,7 @@ p.head-text {
 }
 
 .services-bullet li {
+    list-style-type: none;
     text-align: left;
     font-size: 17px;
     font-weight: bold;
@@ -481,6 +412,15 @@ p.head-text {
 
 
 /* Projects */
+
+.projects-header {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: dimgray;
+}
 
 .projects-header {
     background-color: white;
@@ -521,24 +461,8 @@ p.head-text {
 
 .video-section-title {
     padding: 3px;
-    padding-left: 5px;
+    padding-left: 15px;
     padding-top: 7px;
-}
-
-
-/* About us */
-
-.about-us-box {
-    padding: 0;
-    padding-bottom: 50px;
-}
-
-
-/* Contact */
-
-.contact-box {
-    padding: 0;
-    padding-bottom: 50px;
 }
 
 
@@ -549,20 +473,21 @@ p.head-text {
 }
 
 .footer-col {
-    margin: 0;
-    margin-top: 4px;
     text-align: center;
-    display: inline-block;
-    float: left;
-    width: 366px;
 }
 
 .footer-text-col {
-    margin-top: 23px;
+    margin-top: 10px;
 }
 
 .footer-text {
     color: gray;
+}
+
+.footer-icon {
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
