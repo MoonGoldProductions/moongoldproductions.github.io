@@ -42,8 +42,3 @@ $(function () {
         });
     });
 }(jQuery));
-
-// Parallax effect.
-$(document).ready(function () {
-    $('.parallax').parallax();
-});

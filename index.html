@@ -3,14 +3,16 @@
 <html>
 
 <head>
+    <title>MoonGold Productions</title>
+
+    <!-- Import Bootstrap -->
     <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <!-- Custom styles -->
     <link rel="stylesheet" href="css/style.css">
-    <!--Import Google Icon Font-->
+    <!-- Import Google Icon Font -->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <!--Let browser know website is optimized for mobile-->
+    <!-- Let browser know website is optimized for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -38,287 +40,271 @@
         </div>
     </nav>
 
-    <div id="top" class="parallax-container" style="height: 100%">
-        <div class="parallax"><img class="opening-background-img" src="img/Style/Taust%202.jpg"></div>
-        <div class="opening-screen">
-            <div class="button-row">
-                <div class="social-media-cell">
-                    <div class="social-media-block">
-                        <a href="https://www.facebook.com/pages/MoonGold-Productions/284465701592488/" target="_blank">
-                            <figure class="icon">
-                                <img class="site-img" src="img/Icons/Facebook.png" alt="Facebook">
-                            </figure>
-                        </a>
-                        <a href="https://www.youtube.com/user/MoonGoldProductions/" target="_blank">
-                            <figure class="icon">
-                                <img class="site-img" src="img/Icons/YouTube.ico" alt="YouTube">
-                            </figure>
-                        </a>
-                    </div>
-                </div>
+    <div id="top" class="container-fluid opening-screen-container opening-screen-bg">
+        <div class="row button-row">
+            <div class="col social-media-cell">
+                <a href="https://www.facebook.com/pages/MoonGold-Productions/284465701592488/" target="_blank">
+                    <figure class="icon opening-screen-icon">
+                        <img class="site-img" src="img/Icons/Facebook.png" alt="Facebook">
+                    </figure>
+                </a>
+                <a href="https://www.youtube.com/user/MoonGoldProductions/" target="_blank">
+                    <figure class="icon opening-screen-icon">
+                        <img class="site-img" src="img/Icons/YouTube.ico" alt="YouTube">
+                    </figure>
+                </a>
             </div>
-            <div class="header-row">
-                <div class="header-cell">
-                    <div class="header-logo-col">
+        </div>
+        <div class="row header-row">
+            <div class="col header-cell">
+                <div class="row">
+                    <div class="col-md-2 header-logo-col">
                         <figure class="header-logo">
                             <img class="site-img" src="img/MGP/MGP%20logo%20PNG.png" alt="logo">
                         </figure>
                     </div>
-                    <div class="header-text-col">
+                    <div class="col-md-4">
                         <h1 class="siteHeader1">
-                        <font color="gold">MoonGold</font>
-                        <font color="white"> Productions</font>
-                    </h1>
+                            <font color="gold">MoonGold</font>
+                            <font color="white"> Productions</font>
+                        </h1>
                         <h1 class="siteHeader2">
-                        <font color="gold">Filmitegijad</font>
-                        <font color="white">aastast 2011</font>
-                    </h1>
+                            <font color="gold">Filmitegijad</font>
+                            <font color="white">aastast 2011</font>
+                        </h1>
                     </div>
                 </div>
             </div>
-            <div class="button-row">
-                <div class="button-cell">
-                    <div class="entry-button-block">
-                        <a href="#menu" class="btn btn-primary btn-lg outline site-button">Sisene</a>
+        </div>
+        <div class="row button-row">
+            <div class="col entry-button-cell">
+                <a href="#menu" class="btn btn-default entry-btn">
+                    <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu" class="container menu-container">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-1 col-center">
+                <a href="#news" class="site-button menu-link">
+                    <figure class="image-circle-menu">
+                        <img class="site-img" src="img/Style/kuu.jpg" alt="Link">
+                    </figure>
+                    <p class="menu-text-link">Teated</p>
+                </a>
+            </div>
+            <div class="col-md-2 col-center">
+                <a href="#services" class="site-button menu-link">
+                    <figure class="image-circle-menu">
+                        <img class="site-img" src="img/Style/kaamera1.jpg" alt="Link">
+                    </figure>
+                    <p class="menu-text-link">Teenused</p>
+                </a>
+            </div>
+            <div class="col-md-2 col-center">
+                <a href="#projects" class="site-button menu-link">
+                    <figure class="image-circle-menu">
+                        <img class="site-img" src="img/Style/clapperboard.jpg" alt="Link">
+                    </figure>
+                    <p class="menu-text-link">Projektid</p>
+                </a>
+            </div>
+            <div class="col-md-2 col-center">
+                <a href="#about-us" class="site-button menu-link">
+                    <figure class="image-circle-menu">
+                        <img class="site-img" src="img/MGP/MGP_taust.png" alt="Link">
+                    </figure>
+                    <p class="menu-text-link">Meie kohta</p>
+                </a>
+            </div>
+            <div class="col-md-2 col-center">
+                <a href="#contact" class="site-button menu-link">
+                    <figure class="image-circle-menu">
+                        <img class="site-img" src="img/Style/kontakt.jpg" alt="Link">
+                    </figure>
+                    <p class="menu-text-link">Kontakt</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="news-background">
+        <div id="news" class="container news-container">
+            <div class="row">
+                <div class="col section-header-col">
+                    <h2 class="section-header-text">Teated</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 news-col">
+                    <figure class="news-img-box">
+                        <img src="img/News/TV3.png" alt="Pilt" class="news-img site-img">
+                    </figure>
+                    <div class="news-text-box">
+                        <p class="news-head">Dokumentaalfilm "Häädemeeste fenomen" peagi TV3-es!</p>
+                        <p class="news-text">MTÜ MoonGold sõlmis Eesti telekanali TV3-ega lepingu, mille alusel lubame edastada dokumentaalfilmi "Häädemeeste fenomen" televisioonis. Täpne eetriaeg pole hetkel veel teada, kuid filmi peaks saama näha vahemikus mai kuni september.
+                            <br>Anname kindlasti teada, kui konkreetse aja teada saame.
+                            <br>
+                            <br>Tasub aga teada, et eetrisse jõuab vaid filmi lühendatud versioon. Täispikka versiooni on võimalik näha MGP üritustel ning soetada DVD-na.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 news-col">
+                    <figure class="news-img-box">
+                        <img src="img/Pictures/HFplakat.png" alt="Pilt" class="news-img site-img">
+                    </figure>
+                    <div class="news-text-box">
+                        <p class="news-head">Dokumentaalfilmi "Häädemeeste fenomen" saab nüüd soetada ka DVD peal.</p>
+                        <p class="news-text">Anname hea meelega teada, et MGP vastvalminud dokumentaalfilmi "Häädemeeste fenomen" on nüüdsest võimalik soetada ka DVD peal. DVD'd on võimalik osta kõikidel üritustel, kus toimub filmi näitamine ning peagi ka interneti vahendusel. Internetist tellides on DVD hinnaks 8€.
+                            <br>
+                            <br>DVD sisaldab täispikka versiooni filmist ning on esialgu vaid eestikeelne.
+                            <br>Teatame, kui ka meie veebilehelt DVD'd on võimalik osta.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <section id="menu">
-        <div class="content-wrapper">
-            <div class="menu-box">
-                <div class="columns-menu">
-                    <ul>
-                        <li>
-                            <a href="#news" class="site-button menu-link">
-                                <figure class="image-circle-menu">
-                                    <img class="site-img" src="img/Style/kuu.jpg" alt="Link">
-                                </figure>
-                                <p class="menu-text-link">Teated</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#services" class="site-button menu-link">
-                                <figure class="image-circle-menu">
-                                    <img class="site-img" src="img/Style/kaamera1.jpg" alt="Link">
-                                </figure>
-                                <p class="menu-text-link">Teenused</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#projects" class="site-button menu-link">
-                                <figure class="image-circle-menu">
-                                    <img class="site-img" src="img/Style/clapperboard.jpg" alt="Link">
-                                </figure>
-                                <p class="menu-text-link">Projektid</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#about-us" class="site-button menu-link">
-                                <figure class="image-circle-menu">
-                                    <img class="site-img" src="img/MGP/MGP_taust.png" alt="Link">
-                                </figure>
-                                <p class="menu-text-link">Meie kohta</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="site-button menu-link">
-                                <figure class="image-circle-menu">
-                                    <img class="site-img" src="img/Style/kontakt.jpg" alt="Link">
-                                </figure>
-                                <p class="menu-text-link">Kontakt</p>
-                            </a>
-                        </li>
+    <div id="quote" class="container-fluid quote-container quote-bg">
+        <div class="row quote-row">
+            <div class="col quote-cell">
+                <h4 class="quote-text1">"You shouldn't dream your film,</h4>
+                <h4 class="quote-text2">you should make it!"</h4>
+                <h5 class="quote-author">- Steven Spielberg</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="services-background">
+        <div id="services" class="container">
+            <div class="row">
+                <div class="col section-header-col">
+                    <h2 class="section-header-text">Teenused</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="services-head-text">
+                        Meie teenuste hinnad on kokkuleppelised ning olenevad erinevatest teguritest (transport, aeg, tellija nõuded jne).
+                        <br>Hinna kokkuleppimiseks võtke meiega ühendust E-maili teel:
+                        <a class="mail" href="mailto:moongoldproductions@gmail.com" class="mail-link">Saada E-mail</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 services-col">
+                    <p class="services-title">Video töötlemine</p>
+                    <figure class="image-circle-services">
+                        <img class="site-img" src="img/Style/videotootlus.jpg" alt="Pilt">
+                    </figure>
+                    <ul class="services-bullet">
+                        <li> Videoklippide monteerimine</li>
+                        <li> Eriefektid</li>
                     </ul>
+                    <p class="services-text">
+                        Videotöötluse alla liigitub nii videoklippide monteerimine kui ka eriefektide (nt: plahvatusefektide) lisamine. Algvideo võib pärineda Teilt, kuid keerulisemate efektide puhul on oluline hea video kvaliteet. Tavamonteerimise juurde kuulub vajadusel ka helitöötlus.
+                    </p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="news">
-        <div class="news-background">
-            <div class="content-wrapper">
-                <div class="news-box">
-                    <div class="row">
-                        <div class="news-header">
-                            <h3 class="news-header-text">Teated</h3>
-                        </div>
+                <div class="col-md-4 services-col-middle">
+                    <p class="services-title">Klippide valmistamine</p>
+                    <figure class="image-circle-services">
+                        <img class="site-img" src="img/Style/klippideValmistamine.jpg" alt="Pilt">
+                    </figure>
+                    <ul class="services-bullet">
+                        <li> Reklaamklipid</li>
+                        <li> Tunnusklipid</li>
+                    </ul>
+                    <div class="services-text-box">
+                        <p class="services-text">Videoklippide valmistamise alla kuulub reklaamklippide või tunnusklippide (nt: pealkirjad, introklipid) filmimine ning vajadusel töötlemine.
+                            <br>Kui vajalik, sisaldab teenus endas operaatorit, filmimistehnikat ning meeskonda.
+                            <a href="#reklaamklipid"> Näidistööd</a></p>
                     </div>
-                    <div class="row">
-                        <div class="news-col1">
-                            <figure class="news-img-box">
-                                <img src="img/News/TV3.png" alt="Pilt" class="news-img site-img">
-                            </figure>
-                            <div class="news-text-box">
-                                <p class="news-head">Dokumentaalfilm "Häädemeeste fenomen" peagi TV3-es!</p>
-                                <p class="news-text">MTÜ MoonGold sõlmis Eesti telekanali TV3-ega lepingu, mille alusel lubame edastada dokumentaalfilmi "Häädemeeste fenomen" televisioonis. Täpne eetriaeg pole hetkel veel teada, kuid filmi peaks saama näha vahemikus mai kuni september.
-                                    <br>Anname kindlasti teada, kui konkreetse aja teada saame.
-                                    <br>
-                                    <br>Tasub aga teada, et eetrisse jõuab vaid filmi lühendatud versioon. Täispikka versiooni on võimalik näha MGP üritustel ning soetada DVD-na.</p>
-                            </div>
-                        </div>
-                        <div class="news-col2">
-                            <figure class="news-img-box">
-                                <img src="img/Pictures/HFplakat.png" alt="Pilt" class="news-img site-img">
-                            </figure>
-                            <div class="news-text-box">
-                                <p class="news-head">Dokumentaalfilmi "Häädemeeste fenomen" saab nüüd soetada ka DVD peal.</p>
-                                <p class="news-text">Anname hea meelega teada, et MGP vastvalminud dokumentaalfilmi "Häädemeeste fenomen" on nüüdsest võimalik soetada ka DVD peal. DVD'd on võimalik osta kõikidel üritustel, kus toimub filmi näitamine ning peagi ka interneti vahendusel. Internetist tellides on DVD hinnaks 8€.
-                                    <br>
-                                    <br>DVD sisaldab täispikka versiooni filmist ning on esialgu vaid eestikeelne.
-                                    <br>Teatame, kui ka meie veebilehelt DVD'd on võimalik osta.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="col-md-4 services-col">
+                    <p class="services-title">Filmimisteenus</p>
+                    <figure class="image-circle-services">
+                        <img class="site-img" src="img/Style/kaamera2.jpg" alt="Pilt">
+                    </figure>
+                    <ul class="services-bullet">
+                        <li> Operaator</li>
+                        <li> Filmimistehnika</li>
+                        <li> Meeskond</li>
+                    </ul>
+                    <div class="services-text-box">
+                        <p class="services-text">Filmimisteenus sisaldab endas näiteks kontsertide, laatade või muude ürituste filmimist ning vajadusel jäädvustatud videomaterjali töötlust.
+                            <br>Filmimistehnikat eraldi me ei laenuta.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="quote">
-        <div class="parallax-container" style="height: 380px">
-            <div class="parallax"><img class="quote-background-img" src="img/Style/Taust%201.jpg"></div>
-            <div class="quote-table">
-                <div class="quote-row">
-                    <div class="quote-cell">
-                        <h4 class="quote-text1">"You shouldn't dream your film,</h4>
-                        <h4 class="quote-text2">you should make it!"</h4>
-                        <h5 class="quote-author">- Steven Spielberg</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services">
+    <div id="projects" class="container">
         <div class="row">
-            <div class="services-header">
-                <div class="content-wrapper">
-                    <h3 class="services-header-text">Teenused</h3>
-                </div>
+            <div class="col section-header-col projects-header">
+                <h2 class="section-header-text">Projektid</h2>
             </div>
         </div>
-        <div class="services-background">
-            <div class="content-wrapper">
-                <div class="services-box">
-                    <div class="services-head-text">
-                        <p class="head-text">
-                            Meie teenuste hinnad on kokkuleppelised ning olenevad erinevatest teguritest (transport, aeg, tellija nõuded jne).
-                            <br>Hinna kokkuleppimiseks võtke meiega ühendust E-maili teel:
-                            <a class="mail" href="mailto:moongoldproductions@gmail.com" class="mail-link">Saada E-mail</a>
-                        </p>
-                    </div>
-                    <div class="services-row">
-                        <div class="services-col">
-                            <p class="services-title">Video töötlemine</p>
-                            <figure class="image-circle-services">
-                                <img class="site-img" src="img/Style/videotootlus.jpg" alt="Pilt">
-                            </figure>
-                            <ul class="services-bullet">
-                                <li> Videoklippide monteerimine</li>
-                                <li> Eriefektid</li>
-                            </ul>
-                            <div class="services-text-box">
-                                <p class="services-text">Videotöötluse alla liigitub nii videoklippide monteerimine kui ka eriefektide (nt: plahvatusefektide) lisamine. Algvideo võib pärineda Teilt, kuid keerulisemate efektide puhul on oluline hea video kvaliteet. Tavamonteerimise juurde kuulub vajadusel ka helitöötlus.</p>
-                            </div>
-                        </div>
-                        <div class="services-col-middle">
-                            <p class="services-title">Klippide valmistamine</p>
-                            <figure class="image-circle-services">
-                                <img class="site-img" src="img/Style/klippideValmistamine.jpg" alt="Pilt">
-                            </figure>
-                            <ul class="services-bullet">
-                                <li> Reklaamklipid</li>
-                                <li> Tunnusklipid</li>
-                            </ul>
-                            <div class="services-text-box">
-                                <p class="services-text">Videoklippide valmistamise alla kuulub reklaamklippide või tunnusklippide (nt: pealkirjad, introklipid) filmimine ning vajadusel töötlemine.
-                                    <br>Kui vajalik, sisaldab teenus endas operaatorit, filmimistehnikat ning meeskonda.
-                                    <a href="#reklaamklipid"> Näidistööd</a></p>
-                            </div>
-                        </div>
-                        <div class="services-col">
-                            <p class="services-title">Filmimisteenus</p>
-                            <figure class="image-circle-services">
-                                <img class="site-img" src="img/Style/kaamera2.jpg" alt="Pilt">
-                            </figure>
-                            <ul class="services-bullet">
-                                <li> Operaator</li>
-                                <li> Filmimistehnika</li>
-                                <li> Meeskond</li>
-                            </ul>
-                            <div class="services-text-box">
-                                <p class="services-text">Filmimisteenus sisaldab endas näiteks kontsertide, laatade või muude ürituste filmimist ning vajadusel jäädvustatud videomaterjali töötlust.
-                                    <br>Filmimistehnikat eraldi me ei laenuta.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div id="HF" class="row">
+            <div class="col video-section-title">
+                <h4>Dokumentaalfilm "Häädemeeste fenomen"</h4>
             </div>
         </div>
-    </section>
-
-    <section id="projects">
         <div class="row">
-            <div class="projects-header">
-                <div class="content-wrapper">
-                    <h3 class="services-header-text">Projektid</h3>
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/WbsT5mnrvqA" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/_62bat9qmTk" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-        <div class="content-wrapper">
-            <div class="projects-box">
-                <div id="HF" class="video-section-title">
-                    <h5>Dokumentaalfilm "Häädemeeste fenomen"</h5>
+        <div id="reklaamklipid" class="row">
+            <div class="col video-section-title">
+                <h4>Reklaamklipid</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/1vTvDQsnCG4" allowfullscreen></iframe>
                 </div>
-                <div class="projects-videos-box">
-                    <div class="projects-videos-col1">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/WbsT5mnrvqA" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="projects-videos-col2">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/_62bat9qmTk" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div id="reklaamklipid" class="video-section-title">
-                    <h5>Reklaamklipid</h5>
-                </div>
-                <div class="projects-videos-box">
-                    <div class="projects-videos-col1">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/1vTvDQsnCG4" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="projects-videos-col2">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/0e4WWlX27-k" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div id="naidisprojektid" class="video-section-title">
-                    <h5>Näidistööd</h5>
-                </div>
-                <div class="projects-videos-box">
-                    <div class="projects-videos-col1">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/FJsEa-nFUxY" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="projects-videos-col2">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/W3T-e64mzUY" allowfullscreen></iframe>
-                        </div>
-                    </div>
+            </div>
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/0e4WWlX27-k" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-    </section>
+        <div id="naidisprojektid" class="row">
+            <div class="col video-section-title">
+                <h4>Näidistööd</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/FJsEa-nFUxY" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/W3T-e64mzUY" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
+<<<<<<< HEAD
+    <div id="contact" class="container">
+        <div class="row">
+        </div>
+    </div>
+=======
     <section id="about-us">
         <div class="about-us-header">
                 <div class="content-wrapper">
@@ -359,49 +345,37 @@
         </div>
         
     </section>
+>>>>>>> refs/remotes/origin/master
 
-    <section id="contact">
-        <div class="content-wrapper">
-            <div class="contact-box">
+    <div id="footer" class="navbar navbar-default">
+        <div class="row">
+            <div class="col-md-4 footer-col footer-text-col">
+                <p class="footer-text">Eesti / Estonia</p>
+            </div>
+            <div class="col-md-4 footer-col">
+                <a href="#menu">
+                    <figure class="icon footer-icon">
+                        <img class="site-img" src="img/Icons/BackToTop.png" alt="Üles">
+                    </figure>
+                </a>
+                <a href="https://www.facebook.com/pages/MoonGold-Productions/284465701592488/" target="_blank">
+                    <figure class="icon footer-icon">
+                        <img class="site-img" src="img/Icons/Facebook.png" alt="Facebook">
+                    </figure>
+                </a>
+                <a href="https://www.youtube.com/user/MoonGoldProductions/" target="_blank">
+                    <figure class="icon footer-icon">
+                        <img class="site-img" src="img/Icons/YouTube.ico" alt="YouTube">
+                    </figure>
+                </a>
+            </div>
+            <div class="col-md-4 footer-col footer-text-col">
+                <p class="footer-text">© Mittetulundusühing MoonGold</p>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="footer" class="footer">
-        <div class="navbar navbar-default">
-            <div class="content-wrapper">
-                <div class="row">
-                    <div class="footer-col footer-text-col">
-                        <p class="footer-text">Eesti / Estonia</p>
-                    </div>
-                    <div class="footer-col">
-                        <a href="#menu">
-                            <figure class="icon">
-                                <img class="site-img" src="img/Icons/BackToTop.png" alt="Üles">
-                            </figure>
-                        </a>
-                        <a href="https://www.facebook.com/pages/MoonGold-Productions/284465701592488/" target="_blank">
-                            <figure class="icon">
-                                <img class="site-img" src="img/Icons/Facebook.png" alt="Facebook">
-                            </figure>
-                        </a>
-                        <a href="https://www.youtube.com/user/MoonGoldProductions/" target="_blank">
-                            <figure class="icon">
-                                <img class="site-img" src="img/Icons/YouTube.ico" alt="YouTube">
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="footer-col footer-text-col">
-                        <p class="footer-text">© MoonGold Productions</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Import jQuery before materialize.js -->
     <script data-require="jquery@*" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="js/script.js"></script>
     <script data-require="bootstrap@*" data-semver="3.3.6" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
