@@ -485,10 +485,20 @@ p.services-text {
 }
 
 
+/* Contact */
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+
 /* Site footer */
 
 .footer-navbar {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .footer-col {
