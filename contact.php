@@ -3,16 +3,16 @@
 // configure
 $from = 'moongoldproductions@gmail.com'; 
 $sendTo = 'moongoldproductions@gmail.com';
-$subject = 'New message from contact form';
+$subject = 'Uus kiri veebilehelt';
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in email
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
-$errorMessage = 'There was an error while submitting the form. Please try again later';
+$okMessage = 'Teie kiri saadeti edukalt edasi. Täname ning võtame peagi Teiega ühendust!';
+$errorMessage = 'Tekkis viga Teie kirja edastamisel. Palun proovige hiljem uuesti.';
 
 // let's do the sending
 
 try
 {
-    $emailText = "You have new message from contact form\n=============================\n";
+    $emailText = "Uus kiri veebilehelt\n=============================\n";
 
     foreach ($_POST as $key => $value) {
 
