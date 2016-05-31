@@ -264,7 +264,7 @@ p.menu-text-link {
 }
 
 .news-text-box {
-    width: 548px;
+    width: 100%;
     height: auto;
     padding: 20px;
 }
@@ -340,6 +340,10 @@ p.menu-text-link {
     background-color: lightgray;
 }
 
+.services-header {
+    padding-top: 20px;
+}
+
 .services-col {
     text-align: center;
 }
@@ -350,7 +354,7 @@ p.menu-text-link {
     border-width: 0;
     border-left-width: 1px;
     border-right-width: 1px;
-    border-color: dimgray;
+    border-color: gray;
 }
 
 p.services-title {
@@ -361,12 +365,12 @@ p.services-head-text {
     border-width: 0;
     border-top-width: 1px;
     border-style: solid;
-    border-color: dimgray;
+    border-color: gray;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     padding: 0;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .image-circle-services {
@@ -415,11 +419,12 @@ p.services-text {
 
 .projects-header {
     padding-top: 20px;
+    padding-left: 18px;
     padding-bottom: 15px;
     border-width: 0;
     border-bottom-width: 1px;
     border-style: solid;
-    border-color: dimgray;
+    border-color: gray;
 }
 
 .video-section-title {
@@ -440,11 +445,14 @@ p.services-text {
 }
 
 .about-us-header {
-    
+    padding-left: 0;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: gray;
 }
 
 .faces-col {
-    margin-top: -50px;
     text-align: center;
 }
 
@@ -479,7 +487,7 @@ p.services-text {
 
 /* Site footer */
 
-.footer {
+.footer-navbar {
     margin-top: 50px;
 }
 
