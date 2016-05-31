@@ -9,7 +9,8 @@
     <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <!-- Custom styles -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" type='text/css'>
+    <link rel='stylesheet' href='css/custom.css' type='text/css'>
     <!-- Import Google Icon Font -->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Let browser know website is optimized for mobile -->
@@ -20,15 +21,15 @@
     <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand"><font color="gold">MoonGold</font><font color="white"> Productions</font></a>
+                <a class="navbar-brand" href="#top"><font color="gold">MoonGold</font><font color="white"> Productions</font></a>
             </div>
-            <div class="navbar-collapse collapse">
+            <div id="navbar-collapse" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a class="nav-link" href="#news">Teated</a></li>
                     <li><a class="nav-link" href="#services">Teenused</a></li>
@@ -179,7 +180,7 @@
     <div class="services-background">
         <div id="services" class="container">
             <div class="row">
-                <div class="col section-header-col">
+                <div class="col section-header-col services-header">
                     <h2 class="section-header-text">Teenused</h2>
                 </div>
             </div>
@@ -259,7 +260,7 @@
             </div>
             <div class="col-md-6">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/_62bat9qmTk" allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fSZImcCGPgo" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -302,21 +303,24 @@
     <div class="about-us-background">
         <div id="about-us" class="container">
             <div class="row">
-                <div class="col section-header-col about-us-header">
-                    <h2 class="section-header-text">Meist</h2>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-md-8">
-                    <p class="about-us-text">MoonGold Productions on grupp filmitegijaid, kes tegelevad filmide ja videote valmistamisega. Ennekõike oleme siiski asjahuvilised - me kõik tegeleme vabal ajal oma huvist filmindusvaldkondadega. Nii mõnelgi meist on nendel aladel suured faktiteadmised ja arvestatav praktiline kogemus. Meil on tihti käsil suuremad filmiprojektid ning meeleldi tegeleme ka tellimustöödega. Meie valdkonnaks on kõik filmindusega seonduv alates filmimisest kuni videotöötluseni.
-                        <br>
-                        <br> MGP alustas tööd õpilasfirmana, mis registreeriti 22.12.2011 Junior Achievementis. Õpilasfirma asutasid viis Kadrioru Saksa Gümnaasiumi õpilast: Steven Eomois, Joonas Palm, Toomas Lõõnik, Kevin Pruus ja Markus Taresalu. 07.01.2013 registreeriti MGP EwB-na ehk piirideta ettevõttena ning 18.09.2015 asutasid Joonas Palm ja Steven Eomois mittetulundusühingu MoonGold, mille kaubamärgiks on MoonGold Productions.
-                        <br>
-                        <br> 
-                        Lisaks tellimustöödele tegeleme ka pikemate filmiprojektidega. Aastal 2016 valmis MoonGold Productions'il täispikk dokumentaalfilm "Häädemeeste fenomen", mis jutustab loo müstilistest Häädemeeste nähtustest ning toob vaatajateni sealsete elanike ning tunnistajate kirjeldused kokkupuutest "tundmatuga". "Häädemeeste fenomen" osutus väga edukaks - toimus esilinastus Coca-Cola Plaza's, teleesilinastus telekanalil TV3 (19.05.2016) ning filmi kajastati ka kõikides suuremates meediaväljaannetes (Postimees, Eesti Päevaleht, Õhtuleht, Pärnu Postimees). Lisaks sellele on MGP käinud tellimusena filmimas näiteks 2013. aasta Pärnu Jääfestivali ning on aidanud korraldada igaaastast Eesti filmifestivali KSG NUI.
-                        <br>
-                        <br> Aktiivne mõttevahetus on meile väga tähtis. Hindame kõrgelt tagasisidet nii koostööpartneritelt kui ka meie vaatajatelt.
-                    </p>
+                    <div class="row">
+                        <div class="col section-header-col about-us-header">
+                            <h2 class="section-header-text">Meist</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="about-us-text">MoonGold Productions on grupp filmitegijaid, kes tegelevad filmide ja videote valmistamisega. Ennekõike oleme siiski asjahuvilised - me kõik tegeleme vabal ajal oma huvist filmindusvaldkondadega. Nii mõnelgi meist on nendel aladel suured faktiteadmised ja arvestatav praktiline kogemus. Meil on tihti käsil suuremad filmiprojektid ning meeleldi tegeleme ka tellimustöödega. Meie valdkonnaks on kõik filmindusega seonduv alates filmimisest kuni videotöötluseni.
+                                <br>
+                                <br> MGP alustas tööd õpilasfirmana, mis registreeriti 22.12.2011 Junior Achievementis. Õpilasfirma asutasid viis Kadrioru Saksa Gümnaasiumi õpilast: Steven Eomois, Joonas Palm, Toomas Lõõnik, Kevin Pruus ja Markus Taresalu. 07.01.2013 registreeriti MGP EwB-na ehk piirideta ettevõttena ning 18.09.2015 asutasid Joonas Palm ja Steven Eomois mittetulundusühingu MoonGold, mille kaubamärgiks on MoonGold Productions.
+                                <br>
+                                <br> Lisaks tellimustöödele tegeleme ka pikemate filmiprojektidega. Aastal 2016 valmis MoonGold Productions'il täispikk dokumentaalfilm "Häädemeeste fenomen", mis jutustab loo müstilistest Häädemeeste nähtustest ning toob vaatajateni sealsete elanike ning tunnistajate kirjeldused kokkupuutest "tundmatuga". "Häädemeeste fenomen" osutus väga edukaks - toimus esilinastus Coca-Cola Plaza's, teleesilinastus telekanalil TV3 (19.05.2016) ning filmi kajastati ka kõikides suuremates meediaväljaannetes (Postimees, Eesti Päevaleht, Õhtuleht, Pärnu Postimees). Lisaks sellele on MGP käinud tellimusena filmimas näiteks 2013. aasta Pärnu Jääfestivali ning on aidanud korraldada igaaastast Eesti filmifestivali KSG NUI.
+                                <br>
+                                <br> Aktiivne mõttevahetus on meile väga tähtis. Hindame kõrgelt tagasisidet nii koostööpartneritelt kui ka meie vaatajatelt.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4 faces-col">
                     <div class="row faces-row">
@@ -340,7 +344,79 @@
         </div>
     </div>
 
-    <div id="footer" class="navbar navbar-default">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h1>Contact form Tutorial from <a href="http://bootstrapious.com">Bootstrapious.com</a></h1>
+
+                <p class="lead">This is a demo for our tutorial dedicated to crafting working Bootstrap contact form with PHP and AJAX background.</p>
+
+
+                <form id="contact-form" method="post" action="contact.php" role="form">
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">Firstname *</label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Lastname *</label>
+                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email *</label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_phone">Phone</label>
+                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Message *</label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="btn btn-success btn-send" value="Send message">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-muted"><strong>*</strong> These fields are required. Contact form template by <a href="http://bootstrapious.com" target="_blank">Bootstrapious</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- /.8 -->
+        </div>
+        <!-- /.row-->
+    </div>
+    <!-- /.container-->
+
+    <div id="footer" class="navbar navbar-default footer-navbar">
         <div class="row">
             <div class="col-md-4 footer-col footer-text-col">
                 <p class="footer-text">Eesti / Estonia</p>
@@ -370,6 +446,8 @@
 
     <script data-require="jquery@*" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/contact.js"></script>
     <script data-require="bootstrap@*" data-semver="3.3.6" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 
