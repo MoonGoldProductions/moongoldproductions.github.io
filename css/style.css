@@ -99,17 +99,6 @@ a:link {
     width: 100%;
 }
 
-.social-media-cell {
-    display: table-cell;
-    text-align: right;
-}
-
-.opening-screen-icon {
-    margin: 0;
-    margin-top: 10px;
-    margin-right: 20px;
-}
-
 .header-row {
     display: table-row;
     height: 80%;
@@ -121,8 +110,22 @@ a:link {
     vertical-align: middle;
 }
 
+.social-media-col {
+    text-align: right;
+}
+
+.entry-button-col {
+    text-align: center;
+}
+
+.opening-screen-icon {
+    margin: 0;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
 .header-logo-col {
-    margin-right: -25px;
+    margin-right: -1%;
     margin-left: 5%;
 }
 
@@ -132,9 +135,10 @@ a:link {
     margin: 0;
 }
 
-.entry-button-cell {
-    display: table-cell;
-    text-align: center;
+@media screen and (max-width: 770px) {
+    .header-logo-col {
+        display: none;
+    }
 }
 
 /* Opening screen entry button */
@@ -170,7 +174,7 @@ a.entry-btn:link:active {
 /* Header text */
 
 h1.siteHeader1 {
-    font-size: 250%;
+    font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     margin-bottom: 5px;
@@ -178,16 +182,16 @@ h1.siteHeader1 {
 }
 
 h1.siteHeader2 {
-    font-size: 100%;
+    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 2px;
 }
 
 /* Adjust header size when screen too small */
 
-@media only screen and (max-width: 390px) {
+@media screen and (max-width: 390px) {
     h1.siteHeader1 {
-        font-size: 8vw;
+        font-size: 30px;
     }
 }
 
@@ -198,6 +202,13 @@ h1.siteHeader2 {
     padding: 0;
     padding-top: 80px;
     padding-bottom: 80px;
+    max-width: 1300px;
+}
+
+@media screen and (max-width: 770px) {
+    .menu-container {
+        display: none;
+    }
 }
 
 .col-center {
@@ -214,6 +225,13 @@ h1.siteHeader2 {
     border-radius: 50%;
 }
 
+@media screen and (max-width: 1050px) {
+    .image-circle-menu {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 a.menu-link:hover .image-circle-menu {
     box-shadow:  0 0 10px 5px rgba(0,0,0,0.4);
     -moz-box-shadow: 0 0 10px  5px rgba(0,0,0,0.4);
@@ -223,6 +241,18 @@ a.menu-link:hover .image-circle-menu {
 
 p.menu-text-link {
     font-size: 25px;
+}
+
+@media screen and (max-width: 1090px) {
+    p.menu-text-link {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    p.menu-text-link {
+        font-size: 17px;
+    }
 }
 
 
@@ -276,6 +306,12 @@ p.menu-text-link {
 
 .news-text {
     font-size: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .news-text {
+        font-size: 14px;
+    }
 }
 
 
@@ -333,6 +369,33 @@ p.menu-text-link {
     margin-left: 40%;
 }
 
+@media screen and (max-width: 1040px) {
+    .quote-text1, .quote-text2 {
+        font-size: 22px;
+    }
+    
+    .quote-author {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .quote-text1 {
+        font-size: 20px;
+        margin-left: 2%;
+    }
+    
+    .quote-text2 {
+        font-size: 20px;
+        margin-left: 10%;
+    }
+    
+    .quote-author {
+        font-size: 17px;
+        margin-left: 30%;
+    }
+}
+
 
 /* Services */
 
@@ -357,6 +420,14 @@ p.menu-text-link {
     border-color: gray;
 }
 
+@media screen and (max-width: 991px) {
+    .services-col-middle {
+        border-style: none;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
 p.services-title {
     font-size: 25px;
 }
@@ -371,6 +442,18 @@ p.services-head-text {
     padding: 0;
     padding-top: 30px;
     padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    p.services-head-text {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    p.services-head-text {
+        font-size: 14px;
+    }
 }
 
 .image-circle-services {
@@ -389,6 +472,12 @@ p.services-text {
     padding: 0;
     padding-left: 20px;
     padding-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    p.services-text {
+        font-size: 14px;
+    }
 }
 
 .services-bullet li:before {
@@ -433,8 +522,30 @@ p.services-text {
     padding-top: 7px;
 }
 
+@media screen and (max-width: 650px) {
+    .video-section-title {
+        padding: 2px;
+        padding-left: 15px;
+        padding-top: 0;
+    }
+    
+    .mobile-video-title {
+        font-size: 15px;
+    }
+}
+
 .bottom-video-col {
     margin-bottom: 60px;
+}
+
+@media screen and (max-width: 991px) {
+    .mobile-video {
+        margin-bottom: 20px;
+    }
+    
+    .bottom-video-col {
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -484,8 +595,33 @@ p.services-text {
     font-weight: 600;
 }
 
+@media screen and (max-width: 600px) {
+    .about-us-text {
+        font-size: 14px;
+    }
+    
+    .faces-text {
+        font-size: 16px;
+    }
+}
+
 
 /* Contact */
+
+.contact-header {
+    padding-top: 20px;
+    padding-left: 18px;
+    padding-bottom: 15px;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: gray;
+}
+
+.lead {
+    padding-left: 20px;
+    padding-top: 10px;
+}
 
 .btn-send {
     font-weight: 300;
