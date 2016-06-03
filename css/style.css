@@ -99,10 +99,15 @@ a:link {
 @media screen and (max-width: 770px) {
     .opening-screen-bg {
         height: 500px;
+        min-height: 500px;
         -webkit-background-size: auto;
         -moz-background-size: auto;
         -o-background-size: auto;
         background-size: auto;
+    }
+    
+    .opening-screen-container {
+        height: 500px;
     }
 }
 
