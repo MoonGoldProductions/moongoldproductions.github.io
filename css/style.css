@@ -98,12 +98,12 @@ a:link {
 
 @media screen and (max-width: 770px) {
     .opening-screen-container {
-        height: 100vh;
+        height: 500px;
     }
     
     .opening-screen-bg {
-        min-height: 100vh;
-        height: 100vh;
+        min-height: 500px;
+        height: 500px;
     }
 }
 
