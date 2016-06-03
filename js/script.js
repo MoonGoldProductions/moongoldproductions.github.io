@@ -6,7 +6,7 @@ $(function () {
             var offset = 50;
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.selector === "#menu") {
+            if (target.selector === "#menu" && $('#menu').height() !== 0) {
                 offset = 0;
             }
             if (target.length) {
