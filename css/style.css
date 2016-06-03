@@ -60,6 +60,16 @@ a:link {
     font-size: 40px;
 }
 
+@media screen and (max-width: 767px) {
+    .section-header-text {
+        font-size: 30px;
+    }
+    
+    .section-header-col {
+        margin-top: -30px;
+    }
+}
+
 
 /* Fixed top navbar */
 
@@ -93,17 +103,11 @@ a:link {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 100%;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 767px) {
     .opening-screen-container {
-        height: 100vh;
-    }
-    
-    .opening-screen-bg {
-        min-height: 100vh;
-        height: 100vh;
+        height: 500px;
     }
 }
 
@@ -149,7 +153,7 @@ a:link {
     margin: 0;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 767px) {
     .header-logo-col {
         display: none;
     }
@@ -219,17 +223,6 @@ h1.siteHeader2 {
     max-width: 1300px;
 }
 
-@media screen and (max-width: 770px) {
-    .menu-row {
-        display: none;
-    }
-    
-    .menu-container {
-        height: 0;
-        padding: 0;
-    }
-}
-
 .col-center {
     text-align: center;
 }
@@ -242,13 +235,6 @@ h1.siteHeader2 {
     height: 160px;
     overflow: hidden;
     border-radius: 50%;
-}
-
-@media screen and (max-width: 1050px) {
-    .image-circle-menu {
-        width: 100px;
-        height: 100px;
-    }
 }
 
 a.menu-link:hover .image-circle-menu {
@@ -268,9 +254,27 @@ p.menu-text-link {
     }
 }
 
+@media screen and (max-width: 1050px) {
+    .image-circle-menu {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 @media screen and (max-width: 785px) {
     p.menu-text-link {
         font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .menu-row {
+        display: none;
+    }
+    
+    .menu-container {
+        height: 0;
+        padding: 0;
     }
 }
 
@@ -285,8 +289,8 @@ p.menu-text-link {
     background: url('/img/MGP/MGP_taust_blur.png') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
     border-width: 0;
     border-bottom-width: 1px;
     border-style: solid;
@@ -307,9 +311,15 @@ p.menu-text-link {
     overflow: hidden;
 }
 
-.news-img {
+.news-image {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     width: 100%;
-    object-fit: cover;
+    height: 100%;
 }
 
 .news-text-box {
@@ -327,7 +337,7 @@ p.menu-text-link {
     font-size: 15px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     .news-text {
         font-size: 14px;
     }
@@ -344,6 +354,9 @@ p.menu-text-link {
 
 .quote-bg {
     background: url('/img/Style/Taust%201.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-position: 0 60%;
 }
@@ -399,13 +412,17 @@ p.menu-text-link {
 }
 
 @media screen and (max-width: 825px) {
+    .quote-container {
+        height: 320px;
+    }
+    
     .quote-text1 {
-        font-size: 20px;
+        font-size: 18px;
         margin-left: 2%;
     }
     
     .quote-text2 {
-        font-size: 20px;
+        font-size: 18px;
         margin-left: 10%;
     }
     
@@ -439,14 +456,6 @@ p.menu-text-link {
     border-color: gray;
 }
 
-@media screen and (max-width: 991px) {
-    .services-col-middle {
-        border-style: none;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-}
-
 p.services-title {
     font-size: 25px;
 }
@@ -461,18 +470,6 @@ p.services-head-text {
     padding: 0;
     padding-top: 30px;
     padding-bottom: 10px;
-}
-
-@media screen and (max-width: 1200px) {
-    p.services-head-text {
-        font-size: 17px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    p.services-head-text {
-        font-size: 14px;
-    }
 }
 
 .image-circle-services {
@@ -491,12 +488,6 @@ p.services-text {
     padding: 0;
     padding-left: 20px;
     padding-top: 15px;
-}
-
-@media screen and (max-width: 600px) {
-    p.services-text {
-        font-size: 14px;
-    }
 }
 
 .services-bullet li:before {
@@ -522,6 +513,37 @@ p.services-text {
     padding-left: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+    p.services-head-text {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .services-col-middle {
+        border-style: none;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    p.services-head-text {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    
+    p.services-text {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    
+    .image-circle-services {
+        width: 150px;
+        height: 150px;
+    }
+}
+
 
 /* Projects */
 
@@ -541,18 +563,6 @@ p.services-text {
     padding-top: 7px;
 }
 
-@media screen and (max-width: 650px) {
-    .video-section-title {
-        padding: 2px;
-        padding-left: 15px;
-        padding-top: 0;
-    }
-    
-    .mobile-video-title {
-        font-size: 15px;
-    }
-}
-
 .bottom-video-col {
     margin-bottom: 60px;
 }
@@ -564,6 +574,18 @@ p.services-text {
     
     .bottom-video-col {
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .video-section-title {
+        padding: 0;
+        padding-left: 15px;
+        padding-top: 0;
+    }
+    
+    .mobile-video-title {
+        font-size: 18px;
     }
 }
 
@@ -614,13 +636,18 @@ p.services-text {
     font-weight: 600;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     .about-us-text {
         font-size: 14px;
     }
     
     .faces-text {
         font-size: 16px;
+    }
+    
+    .image-circle-about-us {
+        width: 150px;
+        height: 150px;
     }
 }
 
