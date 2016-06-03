@@ -100,6 +100,11 @@ a:link {
     .opening-screen-container {
         height: 500px;
     }
+    
+    .opening-screen-bg {
+        min-height: 500px;
+        height: 500px;
+    }
 }
 
 .button-row {
