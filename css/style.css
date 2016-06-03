@@ -93,8 +93,13 @@ a:link {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100vh;
     min-height: 100%;
+}
+
+@media screen and (max-width: 770px) {
+    .opening-screen-bg {
+        height: 500px;
+    }
 }
 
 .button-row {
