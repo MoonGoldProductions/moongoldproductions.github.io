@@ -681,6 +681,7 @@ p.services-text {
 
 .footer-navbar {
     margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .footer-col {
@@ -699,6 +700,33 @@ p.services-text {
     margin: 0;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.to-top-btn {
+    margin-top: 0;
+    margin-bottom: 26px;
+    margin-right: 9px;
+    width: 32px;
+    height: 32px;
+    padding-left: 9px;
+    border-radius: 50%;
+    border-width: 0;
+}
+
+a.to-top-btn:link:hover, a.to-top-btn:visited:hover {
+    text-decoration: none;
+    color: dodgerblue;
+    background-color: lightgray;
+}
+
+a.to-top-btn:link, a.to-top-btn:visited {
+    text-decoration: none;
+    background-color: dimgray;
+    color: gold;
+}
+
+a.to-top-btn:link:active {
+    text-decoration: none;
 }
 
 

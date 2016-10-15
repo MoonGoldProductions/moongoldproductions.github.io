@@ -24,7 +24,7 @@ $(function () {
     $(document).ready(function () {
 
         // the height from where #navbar shall be displayed
-        var height = document.getElementById("news").offsetTop - document.getElementById("navbar").offsetHeight - 1;
+        var height = document.getElementById("news").offsetTop - document.getElementById("navbar").offsetHeight - 2;
 
         // hide #navbar first
         $("#navbar").hide();
