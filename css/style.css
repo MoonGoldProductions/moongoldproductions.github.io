@@ -307,7 +307,7 @@ p.menu-text-link {
 .news-img-box {
     margin: 0;
     width: 100%;
-    height: calc(100vw / 4);
+    height: 250px;
     overflow: hidden;
 }
 
