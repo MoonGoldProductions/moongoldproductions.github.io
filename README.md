@@ -6,4 +6,4 @@ Link: http://moongoldproductions.github.io/
 
 Developers: Joonas Palm and Toomas Lõõnik.
 
-© Mittetulundusühing MoonGold 2018
+© Mittetulundusühing MoonGold 2019
