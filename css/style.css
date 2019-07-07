@@ -337,6 +337,12 @@ p.menu-text-link {
     font-size: 15px;
 }
 
+.news-date {
+    font-size: 15px;
+    font-weight: lighter;
+    color: grey;
+}
+
 @media screen and (max-width: 767px) {
     .news-text {
         font-size: 14px;
