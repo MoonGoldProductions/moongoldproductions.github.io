@@ -81,11 +81,15 @@ a:link {
 }
 
 .navbar .nav > li > a:link {
-    color: darkgray;
+    color: lightgray;
 }
 
 .navbar .nav > li > a:hover {
-    color: whitesmoke;
+    color: white;
+}
+
+.navbar .nav > li > a:focus {
+    color: darkgray;
 }
 
 
@@ -119,7 +123,7 @@ a:link {
 
 .header-row {
     display: table-row;
-    height: 80%;
+    height: 90%;
     width: 100%;
 }
 
@@ -633,6 +637,7 @@ p.services-text {
 .faces-col {
     padding-top: 15px;
     text-align: center;
+    padding-bottom: 15px;
 }
 
 .image-circle-about-us {
