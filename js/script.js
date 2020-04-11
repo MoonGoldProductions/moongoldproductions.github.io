@@ -45,7 +45,16 @@ $(function () {
 
 // Hide collapsed navbar's extended menu after a click.
 $(document).ready(function () {
-  $(".navbar-nav li a").click(function(event) {
-    $(".navbar-collapse").collapse('hide');
-  });
+    $(".navbar-nav li a").click(function (event) {
+        $(".navbar-collapse").collapse('hide');
+    });
+});
+
+// Include HTML elements. Usage: <div data-include="name-of-html-file"></div>
+$(function () {
+    var includes = $('[data-include]');
+    jQuery.each(includes, function () {
+        var file = 'components/' + $(this).data('include') + '.html';
+        $(this).load(file);
+    });
 });

@@ -15,12 +15,14 @@ body {
 
 /* Site button styling */
 
-a.site-button:link:hover, a.site-button:visited:hover {
+a.site-button:link:hover,
+a.site-button:visited:hover {
     color: dodgerblue;
     text-decoration: none;
 }
 
-a.site-button:link, a.site-button:visited {
+a.site-button:link,
+a.site-button:visited {
     color: black;
     text-decoration: none;
 }
@@ -64,7 +66,7 @@ a:link {
     .section-header-text {
         font-size: 30px;
     }
-    
+
     .section-header-col {
         margin-top: -30px;
     }
@@ -132,18 +134,8 @@ a:link {
     vertical-align: middle;
 }
 
-.social-media-col {
-    text-align: right;
-}
-
 .entry-button-col {
     text-align: center;
-}
-
-.opening-screen-icon {
-    margin: 0;
-    margin-top: 10px;
-    margin-right: 20px;
 }
 
 .header-logo-col {
@@ -177,13 +169,15 @@ a:link {
     border-width: 0;
 }
 
-a.entry-btn:link:hover, a.entry-btn:visited:hover {
+a.entry-btn:link:hover,
+a.entry-btn:visited:hover {
     text-decoration: none;
     color: dodgerblue;
     background-color: lightgray;
 }
 
-a.entry-btn:link, a.entry-btn:visited {
+a.entry-btn:link,
+a.entry-btn:visited {
     text-decoration: none;
     background-color: dimgray;
     color: gold;
@@ -242,10 +236,10 @@ h1.siteHeader2 {
 }
 
 a.menu-link:hover .image-circle-menu {
-    box-shadow:  0 0 10px 5px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0 0 10px  5px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 0 0 10px 5px rgba(0,0,0,0.4);
-    -o-box-shadow: 0 0 10px 5px rgba(0,0,0,0.4);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
 }
 
 p.menu-text-link {
@@ -275,7 +269,7 @@ p.menu-text-link {
     .menu-row {
         display: none;
     }
-    
+
     .menu-container {
         height: 0;
         padding: 0;
@@ -430,10 +424,12 @@ p.menu-text-link {
 }
 
 @media screen and (max-width: 1040px) {
-    .quote-text1, .quote-text2 {
+
+    .quote-text1,
+    .quote-text2 {
         font-size: 22px;
     }
-    
+
     .quote-author {
         font-size: 18px;
     }
@@ -443,17 +439,17 @@ p.menu-text-link {
     .quote-container {
         height: 320px;
     }
-    
+
     .quote-text1 {
         font-size: 18px;
         margin-left: 2%;
     }
-    
+
     .quote-text2 {
         font-size: 18px;
         margin-left: 10%;
     }
-    
+
     .quote-author {
         font-size: 17px;
         margin-left: 30%;
@@ -560,12 +556,12 @@ p.services-text {
         font-size: 14px;
         padding-left: 10px;
     }
-    
+
     p.services-text {
         font-size: 14px;
         padding-left: 10px;
     }
-    
+
     .image-circle-services {
         width: 150px;
         height: 150px;
@@ -599,7 +595,7 @@ p.services-text {
     .mobile-video {
         margin-bottom: 20px;
     }
-    
+
     .bottom-video-col {
         margin-bottom: 20px;
     }
@@ -611,7 +607,7 @@ p.services-text {
         padding-left: 15px;
         padding-top: 0;
     }
-    
+
     .mobile-video-title {
         font-size: 18px;
     }
@@ -667,11 +663,11 @@ p.services-text {
     .about-us-text {
         font-size: 14px;
     }
-    
+
     .faces-text {
         font-size: 16px;
     }
-    
+
     .image-circle-about-us {
         width: 150px;
         height: 150px;
@@ -723,12 +719,6 @@ p.services-text {
     color: gray;
 }
 
-.footer-icon {
-    margin: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
 .to-top-btn {
     margin-top: 0;
     margin-bottom: 26px;
@@ -740,13 +730,15 @@ p.services-text {
     border-width: 0;
 }
 
-a.to-top-btn:link:hover, a.to-top-btn:visited:hover {
+a.to-top-btn:link:hover,
+a.to-top-btn:visited:hover {
     text-decoration: none;
     color: dodgerblue;
     background-color: lightgray;
 }
 
-a.to-top-btn:link, a.to-top-btn:visited {
+a.to-top-btn:link,
+a.to-top-btn:visited {
     text-decoration: none;
     background-color: dimgray;
     color: gold;
@@ -754,13 +746,4 @@ a.to-top-btn:link, a.to-top-btn:visited {
 
 a.to-top-btn:link:active {
     text-decoration: none;
-}
-
-
-/* Icons, e.g. Facebook, YouTube */
-
-.icon {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
 }
