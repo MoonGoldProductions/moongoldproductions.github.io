@@ -92,17 +92,38 @@ a:link {
 /* Opening screen */
 
 .opening-screen-container {
-    height: 100%;
+    position: relative;
     width: 100%;
-    display: table;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.opening-screen-bg {
-    background: url('/img/Style/Taust%202.jpg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.opening-screen-video-container {
+    position: absolute;
+    width: 100%;
+}
+
+.opening-screen-title-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: table;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.video-color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
 }
 
 .button-row {
