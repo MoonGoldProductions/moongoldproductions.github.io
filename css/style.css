@@ -106,6 +106,22 @@ a:link {
     width: 100%;
 }
 
+.opening-screen-video-container video {
+    /* Make video at least 100% wide and tall */
+    min-width: 100%;
+    min-height: 100%;
+    
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+
+    /* Center the video */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .opening-screen-title-container {
     position: absolute;
     width: 100%;
@@ -162,7 +178,7 @@ a:link {
     .opening-screen-container {
         height: 500px;
     }
-    
+
     .header-logo-col {
         display: none;
     }
@@ -636,7 +652,7 @@ p.services-text {
     .mobile-video-title {
         font-size: 17px;
     }
-    
+
     .video-col {
         padding-left: 0 !important;
         padding-right: 0 !important;
@@ -731,7 +747,7 @@ p.services-text {
     .lead {
         padding-left: 0;
     }
-    
+
     .contact-col {
         padding-left: 0 !important;
         padding-right: 0 !important;
