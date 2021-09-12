@@ -2,7 +2,7 @@
 
 This repository contains the sources of MoonGold Productions' website.
 
-Please visit https://moongoldprod.com/ to view our homepage.
+Please visit [https://moongoldprod.com/](https://moongoldprod.com/) to view our homepage.
 
 ## Development with Firebase
 
