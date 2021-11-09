@@ -7,9 +7,10 @@
 
     <!-- To beautify code type: Ctrl+Shift+L -->
 
+    <meta charset="utf-8">
+
     <!-- Import Bootstrap -->
-    <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/style.css" type='text/css'>
     <!-- Import Google Icon Font -->
@@ -19,30 +20,25 @@
 </head>
 
 <body>
-    <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#top">
-                    <font color="gold">MoonGold</font>
-                    <font color="white"> Productions</font>
-                </a>
-            </div>
-            <div id="navbar-collapse" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a class="nav-link" href="#news">Teated</a></li>
-                    <li><a class="nav-link" href="#services">Teenused</a></li>
-                    <li><a class="nav-link" href="#projects">Projektid</a></li>
-                    <li><a class="nav-link" href="#about-us">Meist</a></li>
-                    <li><a class="nav-link" href="#contact">Kontakt</a></li>
-                    <li><a class="nav-link" href="https://www.facebook.com/moongoldproductions/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a class="nav-link" href="https://www.youtube.com/user/MoonGoldProductions/" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
-                    <li><a class="nav-link" href="https://www.linkedin.com/company/npo-moongold/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <a class="navbar-brand" href="#top">
+                <font color="gold">MoonGold</font>
+                <font color="white"> Productions</font>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarSupportedContent" class="navbar-collapse collapse">
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item"><a class="nav-link" href="#news">Teated</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Teenused</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projektid</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-us">Meist</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/moongoldproductions/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/user/MoonGoldProductions/" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/company/npo-moongold/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -74,7 +70,7 @@
             <div class="button-row">
                 <div class="col entry-button-col">
                     <a href="#menu" class="btn btn-default entry-btn">
-                        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                        <i class="fa fa-chevron-down"></i>
                     </a>
                 </div>
             </div>
@@ -89,7 +85,7 @@
 
     <div id="menu" class="container-fluid menu-container">
         <div class="row menu-row">
-            <div class="col-sm-2 col-sm-offset-1 col-center">
+            <div class="col col-center">
                 <a href="#news" class="site-button menu-link">
                     <figure class="image-circle-menu">
                         <img class="site-img" src="img/Style/kuu.jpg" alt="Link">
@@ -97,7 +93,7 @@
                     <p class="menu-text-link">Teated</p>
                 </a>
             </div>
-            <div class="col-sm-2 col-center">
+            <div class="col col-center">
                 <a href="#services" class="site-button menu-link">
                     <figure class="image-circle-menu">
                         <img class="site-img" src="img/Style/kaamera1.jpg" alt="Link">
@@ -105,7 +101,7 @@
                     <p class="menu-text-link">Teenused</p>
                 </a>
             </div>
-            <div class="col-sm-2 col-center">
+            <div class="col col-center">
                 <a href="#projects" class="site-button menu-link">
                     <figure class="image-circle-menu">
                         <img class="site-img" src="img/Style/clapperboard.jpg" alt="Link">
@@ -113,7 +109,7 @@
                     <p class="menu-text-link">Projektid</p>
                 </a>
             </div>
-            <div class="col-sm-2 col-center">
+            <div class="col col-center">
                 <a href="#about-us" class="site-button menu-link">
                     <figure class="image-circle-menu">
                         <img class="site-img" src="img/MGP/MGP_taust.png" alt="Link">
@@ -121,7 +117,7 @@
                     <p class="menu-text-link">Meist</p>
                 </a>
             </div>
-            <div class="col-sm-2 col-center">
+            <div class="col col-center">
                 <a href="#contact" class="site-button menu-link">
                     <figure class="image-circle-menu">
                         <img class="site-img" src="img/Style/kontakt.jpg" alt="Link">
@@ -133,7 +129,8 @@
     </div>
 
     <div class="news-background">
-        <div id="news" class="container news-container">
+        <a class="anchor" id="news"></a>
+        <div class="container news-container">
             <div class="row">
                 <div class="col section-header-col">
                     <h2 class="section-header-text">Teated</h2>
@@ -161,7 +158,8 @@
     </div>
 
     <div class="services-background">
-        <div id="services" class="container">
+        <a class="anchor" id="services"></a>
+        <div class="container">
             <div class="row">
                 <div class="col section-header-col">
                     <h2 class="section-header-text">Teenused</h2>
@@ -224,7 +222,8 @@
         </div>
     </div>
 
-    <div id="projects" class="container">
+    <div class="container">
+        <a class="anchor" id="projects"></a>
         <div class="row">
             <div class="col section-header-col projects-header">
                 <h2 class="section-header-text">Projektid</h2>
@@ -237,30 +236,31 @@
         </div>
         <div class="row">
             <div class="col-md-6 video-col mobile-video">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WbsT5mnrvqA" allowfullscreen></iframe>
+                <div class="video_wrapper">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WbsT5mnrvqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-md-6 video-col">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fSZImcCGPgo" allowfullscreen></iframe>
+                <div class="video_wrapper">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fSZImcCGPgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-        <div id="reklaamklipid" class="row">
+        <div class="row">
+            <a class="anchor" id="reklaamklipid"></a>
             <div class="col video-section-title">
                 <h4 class="mobile-video-title">Reklaamklipid</h4>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6 video-col mobile-video">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1vTvDQsnCG4" allowfullscreen></iframe>
+                <div class="video_wrapper">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1vTvDQsnCG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-md-6 video-col">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fs4O_wN4y5U" allowfullscreen></iframe>
+                <div class="video_wrapper">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fs4O_wN4y5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -271,20 +271,21 @@
         </div>
         <div class="row">
             <div class="col-md-6 video-col bottom-video-col">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x6DYbjnDGDQ" allowfullscreen></iframe>
+                <div class="video_wrapper">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/x6DYbjnDGDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-md-6 video-col bottom-video-col">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/X7UdC-K_DJ4" allowfullscreen></iframe>
+                <div class="video_wrapper">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/X7UdC-K_DJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="about-us-background">
-        <div id="about-us" class="container">
+        <a class="anchor" id="about-us"></a>
+        <div class="container">
             <div class="row">
                 <div class="col section-header-col about-us-header">
                     <h2 class="section-header-text">Meist</h2>
@@ -303,25 +304,25 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 faces-col">
+                <div class="col faces-col">
                     <figure class="image-circle-about-us">
                         <img class="site-img" src="img/Faces/joonas.jpg" alt="joonas">
                     </figure>
                     <p class="faces-text">Joonas Palm</p>
                 </div>
-                <div class="col-md-3 faces-col">
+                <div class="col faces-col">
                     <figure class="image-circle-about-us">
                         <img class="site-img" src="img/Faces/steven.jpg" alt="steven">
                     </figure>
                     <p class="faces-text">Steven Eomois</p>
                 </div>
-                <div class="col-md-3 faces-col">
+                <div class="col faces-col">
                     <figure class="image-circle-about-us">
                         <img class="site-img" src="img/Faces/toomas.jpg" alt="toomas">
                     </figure>
                     <p class="faces-text">Toomas Lõõnik</p>
                 </div>
-                <div class="col-md-3 faces-col">
+                <div class="col faces-col">
                     <figure class="image-circle-about-us">
                         <img class="site-img" src="img/Faces/bora.jpg" alt="bora">
                     </figure>
@@ -331,7 +332,8 @@
         </div>
     </div>
 
-    <div class="container" id="contact">
+    <div class="container">
+        <a class="anchor" id="contact"></a>
         <div class="row">
             <div class="col section-header-col contact-header">
                 <h2 class="section-header-text">Kontakt</h2>
@@ -340,57 +342,45 @@
         <div class="row">
             <div class="col">
                 <p class="lead">Võtke meiega ühendust!</p>
-                <form id="contact-form" method="POST" action="https://formspree.io/f/xbjqwrjp" role="form">
-                    <div class="messages"></div>
-                    <div class="controls">
-                        <div class="row">
-                            <div class="col-md-6 contact-col">
-                                <div class="form-group">
-                                    <label for="form_first_name">Eesnimi *</label>
-                                    <input id="form_first_name" type="text" name="first_name" class="form-control" placeholder="Palun sisestage oma eesnimi *" required="required" data-error="Eesnimi on kohustuslik.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 contact-col">
-                                <div class="form-group">
-                                    <label for="form_surname">Perekonnanimi *</label>
-                                    <input id="form_surname" type="text" name="surname" class="form-control" placeholder="Palun sisestage oma perekonnanimi *" required="required" data-error="Perekonnanimi on kohustuslik.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
+                <form id="contact-form" method="POST" action="https://formspree.io/f/xbjqwrjp" class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-6">
+                        <label for="form_first_name" class="form-label">Eesnimi *</label>
+                        <input name="first_name" type="text" class="form-control" id="form_first_name" placeholder="Palun sisestage oma eesnimi *" required>
+                        <div class="invalid-feedback">
+                            Eesnimi on kohustuslik.
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 contact-col">
-                                <div class="form-group">
-                                    <label for="form_email">E-mail *</label>
-                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Palun sisestage oma meiliaadress *" required="required" data-error="Kehtiv meiliaadress on kohustuslik.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 contact-col">
-                                <div class="form-group">
-                                    <label for="form_phone">Telefon</label>
-                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Palun sisestage oma telefoninumber">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="form_surname" class="form-label">Perekonnanimi *</label>
+                        <input name="surname" type="text" class="form-control" id="form_surname" placeholder="Palun sisestage oma perekonnanimi *" required>
+                        <div class="invalid-feedback">
+                            Perekonnanimi on kohustuslik.
                         </div>
-                        <div class="row">
-                            <div class="col-md-12 contact-col">
-                                <div class="form-group">
-                                    <label for="form_message">Tekst *</label>
-                                    <textarea id="form_message" name="message" class="form-control" placeholder="Kiri meile *" rows="4" required="required" data-error="Palun jätke meile teade."></textarea>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 contact-col">
-                                <input type="submit" class="btn btn-success btn-send" value="Saada kiri">
-                            </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="form_email" class="form-label">E-mail *</label>
+                        <input name="email" type="email" class="form-control" id="form_email" placeholder="Palun sisestage oma meiliaadress *" required>
+                        <div class="invalid-feedback">
+                            Kehtiv meiliaadress on kohustuslik.
                         </div>
-                        <div class="row">
-                            <div class="col-md-12 contact-col">
-                                <p class="text-muted"><strong>*</strong> Need on kohustuslikud väljad.</p>
-                            </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="form_phone" class="form-label">Telefon</label>
+                        <input name="phone" type="tel" class="form-control" id="form_phone" placeholder="Palun sisestage oma telefoninumber">
+                    </div>
+                    <div class="col-12">
+                        <label for="form_message" class="form-label">Tekst *</label>
+                        <textarea name="message" type="email" class="form-control" id="form_message" rows="4" placeholder="Kiri meile *" required></textarea>
+                        <div class="invalid-feedback">
+                            Palun jätke meile teade.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-success btn-send" type="submit">Saada kiri</button>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="text-muted"><strong>*</strong> Need on kohustuslikud väljad.</p>
                         </div>
                     </div>
                 </form>
@@ -398,29 +388,30 @@
         </div>
     </div>
 
-    <div id="footer" class="navbar navbar-default footer-navbar">
+    <footer id="footer" class="bg-dark text-center text-white footer-navbar">
         <div class="row">
-            <div class="col-md-4 footer-col footer-text-col">
+            <div class="col footer-col footer-text-col">
                 <p class="footer-text">Eesti / Estonia, Registrikood: 80390469</p>
             </div>
-            <div class="col-md-4 footer-col">
+            <div class="col footer-col">
                 <a href="#menu" class="btn btn-default to-top-btn">
-                    <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                    <i class="fa fa-chevron-up"></i>
                 </a>
             </div>
-            <div class="col-md-4 footer-col footer-text-col">
+            <div class="col footer-col footer-text-col">
                 <p class="footer-text">© Mittetulundusühing MoonGold <script>
                         document.write(new Date().getFullYear())
+
                     </script>
                 </p>
             </div>
         </div>
-    </div>
+    </footer>
 
     <script data-require="jquery@*" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/validator.js"></script>
-    <script src="js/contact.js"></script>
     <script src="https://use.fontawesome.com/ff305e94c4.js"></script>
-    <script data-require="bootstrap@*" data-semver="3.3.6" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-</body></html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

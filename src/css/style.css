@@ -6,10 +6,6 @@ body {
     height: 100%;
 }
 
-.row {
-    display: inline;
-}
-
 
 /* Site button styling */
 
@@ -50,6 +46,7 @@ a:link {
 .section-header-col {
     padding: 0;
     padding-left: 20px;
+    padding-top: 20px;
     margin: 0;
 }
 
@@ -65,25 +62,17 @@ a:link {
 }
 
 
-/* Fixed top navbar */
+/* Navbar */
 
-.navbar-fixed-top {
-    background-color: black;
-    border-width: 0;
-    height: auto;
-    font-size: 15px;
+.navbar-right {
+    margin-left: auto;
+    margin-right: 0;
 }
 
-.navbar .nav > li > a:link {
-    color: lightgray;
-}
-
-.navbar .nav > li > a:hover {
-    color: white;
-}
-
-.navbar .nav > li > a:focus {
-    color: darkgray;
+.anchor {
+    top: -50px;
+    position: relative;
+    display: block;
 }
 
 
@@ -108,7 +97,7 @@ a:link {
     /* Make video at least 100% wide and tall */
     min-width: 100%;
     min-height: 100%;
-    
+
     /* Setting width & height to auto prevents the browser from stretching or squishing the video */
     width: auto;
     height: auto;
@@ -188,8 +177,7 @@ a:link {
     width: 40px;
     height: 40px;
     text-align: center;
-    padding: 7px;
-    padding-left: 9px;
+    padding: 5px;
     font-size: 21px;
     line-height: 1.45;
     border-radius: 50%;
@@ -367,12 +355,8 @@ p.menu-text-link {
 }
 
 @media screen and (max-width: 767px) {
-    .news-text {
-        font-size: 14px;
-    }
-
     .news-text-box {
-        padding: 0;
+        padding: 5px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -398,6 +382,12 @@ p.menu-text-link {
         width: 100%;
         height: calc(100vw / 2.5);
         overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .news-text {
+        font-size: 14px;
     }
 }
 
@@ -497,6 +487,7 @@ p.menu-text-link {
 
 .services-background {
     background-color: lightgray;
+    padding-bottom: 20px;
 }
 
 .services-col {
@@ -547,9 +538,9 @@ p.services-text {
 }
 
 .services-bullet li:before {
-    /* Using a Bootstrap glyphicon as the bullet point */
-    content: "\e080";
-    font-family: 'Glyphicons Halflings';
+    /* Using a Font Awesome icons as the bullet points */
+    content: "\f054";
+    font-family: 'FontAwesome';
     font-size: 17px;
     margin-top: 4px;
     color: gold;
@@ -569,33 +560,14 @@ p.services-text {
     padding-left: 20px;
 }
 
-@media screen and (max-width: 1200px) {
-    p.services-head-text {
-        font-size: 17px;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .services-col-middle {
-        border-style: none;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-}
-
 @media screen and (max-width: 767px) {
     p.services-head-text {
         font-size: 14px;
     }
 
     p.services-text {
-        font-size: 14px;
-        padding-left: 0;
-    }
-
-    .image-circle-services {
-        width: 150px;
-        height: 150px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .services-col {
@@ -606,6 +578,32 @@ p.services-text {
     .services-col-middle {
         padding-left: 0 !important;
         padding-right: 0 !important;
+        border-style: none;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    p.services-head-text {
+        font-size: 17px;
+    }
+
+    p.services-title {
+        font-size: 22px;
+    }
+
+    p.services-text {
+        font-size: 14px;
+    }
+
+    .services-bullet li {
+        font-size: 14px;
+    }
+
+    .image-circle-services {
+        width: 150px;
+        height: 150px;
     }
 }
 
@@ -631,6 +629,20 @@ p.services-text {
     margin-bottom: 60px;
 }
 
+.video_wrapper {
+    /* Keep responsive aspect ratio 16:9 for videos */
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @media screen and (max-width: 991px) {
     .mobile-video {
         margin-bottom: 20px;
@@ -644,7 +656,8 @@ p.services-text {
 @media screen and (max-width: 767px) {
     .video-section-title {
         padding: 0;
-        padding-top: 0;
+        padding-top: 10px;
+        padding-left: 15px;
     }
 
     .mobile-video-title {
@@ -662,6 +675,7 @@ p.services-text {
 
 .about-us-background {
     background-color: lightgray;
+    padding-bottom: 20px;
 }
 
 .about-us-header {
@@ -703,10 +717,6 @@ p.services-text {
 }
 
 @media screen and (max-width: 767px) {
-    .about-us-text {
-        font-size: 14px;
-    }
-
     .faces-text {
         font-size: 14px;
     }
@@ -714,6 +724,17 @@ p.services-text {
     .image-circle-about-us {
         width: 120px;
         height: 120px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about-us-text {
+        font-size: 14px;
+    }
+
+    .image-circle-about-us {
+        width: 150px;
+        height: 150px;
     }
 }
 
@@ -745,11 +766,6 @@ p.services-text {
     .lead {
         padding-left: 0;
     }
-
-    .contact-col {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
 }
 
 
@@ -758,6 +774,7 @@ p.services-text {
 .footer-navbar {
     margin-top: 20px;
     margin-bottom: 0;
+    padding: 20px;
 }
 
 .footer-col {
@@ -769,16 +786,16 @@ p.services-text {
 }
 
 .footer-text {
-    color: gray;
+    color: lightgray;
 }
 
 .to-top-btn {
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 26px;
     margin-right: 9px;
     width: 32px;
     height: 32px;
-    padding-left: 9px;
+    padding: 2px;
     border-radius: 50%;
     border-width: 0;
 }

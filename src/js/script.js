@@ -1,25 +1,4 @@
-// Function for smooth scrolling on the page, when a navigation link is clicked.
-$(function () {
-    $('a[href*=#]:not([href=#])').click(function () {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-            var offset = 50;
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.selector === "#menu" && $('#menu').height() !== 0) {
-                offset = 0;
-            }
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top - offset
-                }, 1000);
-                return false;
-            }
-        }
-    });
-});
-
-// Fade in #navbar, when news section is reached and vice versa.
+// Fade in navbar, when news section is reached and vice versa.
 (function ($) {
     $(document).ready(function () {
 
@@ -58,3 +37,24 @@ $(function () {
         $(this).load(file);
     });
 });
+
+// Disable contact form submissions, if there are invalid fields.
+(function () {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+})()
