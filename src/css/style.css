@@ -293,6 +293,29 @@ p.menu-text-link {
 
 /* News feed */
 
+#slick .slick-slide {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.slick-next:before {
+    font-family: fontAwesome;
+    content: "\f054";
+    font-size: 21px;
+}
+
+.slick-prev:before {
+    font-family: fontAwesome;
+    content: "\f053";
+    font-size: 21px;
+}
+
+.slick-dots {
+    background-color: lightgray;
+    bottom: -30px;
+    height: 31px;
+}
+
 .news-container {
     background-color: lightgray;
 }
@@ -338,6 +361,7 @@ p.menu-text-link {
     width: 100%;
     height: auto;
     padding: 20px;
+    padding-bottom: 0;
 }
 
 .news-head {
@@ -787,7 +811,7 @@ iframe {
 }
 
 .footer-text {
-    color: lightgray;
+    color: rgba(255, 255, 255, .55);
 }
 
 .to-top-btn {

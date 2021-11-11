@@ -29,15 +29,6 @@ $(document).ready(function () {
     });
 });
 
-// Include HTML elements. Usage: <div data-include="name-of-html-file"></div>
-$(function () {
-    var includes = $('[data-include]');
-    jQuery.each(includes, function () {
-        var file = 'components/' + $(this).data('include') + '.html';
-        $(this).load(file);
-    });
-});
-
 // Disable contact form submissions, if there are invalid fields.
 (function () {
     'use strict'
@@ -58,3 +49,26 @@ $(function () {
             }, false)
         })
 })()
+
+// Slick news carousel configuration.
+$('#slick').slick({
+    dots: true,
+    infinite: false,
+    adaptiveHeight: true,
+    speed: 300,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 991,
+            settings: {
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});

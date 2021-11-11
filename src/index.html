@@ -11,6 +11,9 @@
 
     <!-- Import Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Import Slick carousel styles -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/style.css" type='text/css'>
     <!-- Import Google Icon Font -->
@@ -136,13 +139,66 @@
                     <h2 class="section-header-text">Teated</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 news-col">
-                    <div data-include="news-left"></div>
+            <div id="slick" class="row">
+
+                <div class="slide">
+                    <figure class="news-img-box">
+                        <div class="news-image" style="background-image: url(img/News/saue_noia_projekt.jpg);"></div>
+                    </figure>
+                    <div class="news-text-box">
+                        <p class="news-head">MoonGold'i nõiajaht Saue külas</p>
+                        <p class="news-text">Seoses erakordse suvega ebaõnnestusid paraku meie plaanid filmida dokumentaalfilm Tehumardi sündmustest Saaremaal.
+                            Otsustasime siiski midagi linti saada ning nii sündiski lühifilm "Saue Nõia Projekt". Tegemist on sel korral lavastatud absurdikomöödiaga,
+                            mis jutustab loo pealtnäha rahulikust Saue külast Harjumaal. Sealsetes metsades leiavad ööpimeduse varjus aset verdtarretavad sündmused,
+                            mille juured ulatuvad aastakümnete taha sügavasse Nõukogude perioodi. Nõnda asubki MGP meeskond nähtust uurima ning veedab öö kurikuulsas metsatukas,
+                            kus nõid ennast väidetavalt kunagi üles poos.
+                            <br>
+                            Film on saanud inspiratsiooni nii meie eelnevatest projektidest kui ka näiteks filmiajalugu teinud linateosest "The Blair Witch Project", mis linastus aastal 1993.
+                            <br>
+                            Uut lühifilmi saate vaadata meie YouTube'i kanalil: <a href="https://www.youtube.com/watch?v=C0oMD813DXE" target="_blank">Saue Nõia Projekt</a>
+                        </p>
+                        <p class="news-date">21.10.2020</p>
+                    </div>
                 </div>
-                <div class="col-md-6 news-col">
-                    <div data-include="news-right"></div>
+
+                <div class="slide">
+                    <figure class="news-img-box">
+                        <div class="news-image" style="background-image: url(img/News/raikkula_projekt.jpg);"></div>
+                    </figure>
+                    <div class="news-text-box">
+                        <p class="news-head">MoonGold Productions väisas kummitavat Raikküla mõisa</p>
+                        <p class="news-text">
+                            Raikküla mõis on mõisakompleks Raplamaal, mis seob omavahel nimesid nagu Alexander von Keyserling, Otto von Bismarck,
+                            Charles Darwin ning Johann Sebastian Bach. Säärane suursugune ajalugu muudab need hooned Eestis ainulaadseks,
+                            kuid vaatamata sellele seisab see tänapäeval paraku varemetes.
+                            <br>Lisaks võimsale ajaloole peidab see barokk-klassitsistlik kompleks oma müüride vahel ka hulganisti salapära ning
+                            paranormaalsust. Liiguvad jutud endistest mõisaomanikest, kes ka tänapäeval sealsetes pikkades koridorides ning suurtes
+                            saalides ringi liiguvad. Lisaks pidavat mõisapark endas peitma võimsaid energiasambaid.
+                            <br>Kõigelt sellelt saladusloori kergitamiseks korraldas MGP Raikkülla järjekordse ekspeditsiooni, mille tulemusena valmis
+                            lühikene <a href="https://www.youtube.com/watch?v=L_8GsMGapOI" target="_blank">reportaaž</a> MGP YouTube'i kanalil.
+                        </p>
+                        <p class="news-date">18.09.2019</p>
+                    </div>
                 </div>
+
+                <div class="slide">
+                    <figure class="news-img-box">
+                        <div class="news-image" style="background-image: url(img/News/viies_maailm.png);"></div>
+                    </figure>
+                    <div class="news-text-box">
+                        <p class="news-head">MoonGold'i uus saatesari Viies Maailm</p>
+                        <p class="news-text">Inimkond on juba algusaegadest saadik mänginud mõttega, et peale meie mõistuspärase maailma eksisteerib veel midagi,
+                            mis kulgeb paralleelselt, mida on keeruline defineerida ning mida ümbritseb tihe kiht salapära - meie nimetame seda "viiendaks maailmaks".
+                            <br><br>
+                            Viies Maailm on seeria ekspeditsioonidest erinevates asukohtades, mida seostatakse paranormaalsete nähtuste ja lugudega.
+                            Eesmärgiks on neid avalikkusele tutvustada ning sealsete elanike kirjeldusi kokkupuutest tundmatuga dokumenteerida.
+                            <br><br>
+                            Sarjaga saate tutvuda meie YouTube'i kanalil: <a href="https://www.youtube.com/playlist?list=PLheUDPgwCwC0uM9-3Jy2nNZl7om7FAj_c" target="_blank">Viies Maailm</a>
+                        </p>
+                        <p class="news-date">26.08.2018</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -297,7 +353,7 @@
                         <br>
                         <br> MGP alustas tööd õpilasfirmana, mis registreeriti 22.12.2011 Junior Achievementis. Õpilasfirma asutasid viis Kadrioru Saksa Gümnaasiumi õpilast: Steven Eomois, Joonas Palm, Toomas Lõõnik, Kevin Pruus ja Markus Taresalu. 07.01.2013 registreeriti MGP EwB-na ehk piirideta ettevõttena ning 18.09.2015 asutasid Joonas Palm ja Steven Eomois mittetulundusühingu MoonGold, mille kaubamärgiks on MoonGold Productions.
                         <br>
-                        <br> Lisaks tellimustöödele tegeleme ka pikemate filmiprojektidega. Aastal 2016 valmis MoonGold Productions'il täispikk dokumentaalfilm "Häädemeeste fenomen", mis jutustab loo müstilistest Häädemeeste nähtustest ning toob vaatajateni sealsete elanike ning tunnistajate kirjeldused kokkupuutest "tundmatuga". "Häädemeeste fenomen" osutus väga edukaks - toimus esilinastus Coca-Cola Plaza's, teleesilinastus telekanalil TV3 (19.05.2016) ning filmi kajastati ka kõikides suuremates meediaväljaannetes (<a href="https://kultuur.postimees.ee/3461375/haademeeste-fenomen-ufod-veensid-jumalad-mitte">Postimees</a>, <a href="https://ekspress.delfi.ee/elu/ivo-kolts-nuud-on-toestatud-et-teispoolsus-on-toesti-olemas?id=73347205">Eesti Ekspress</a>, <a href="https://www.ohtuleht.ee/733785/ufod-haademeestel-uks-roovis-memme-teine-pogenes-hirmuga-ahju">Õhtuleht</a>, <a href="https://parnu.postimees.ee/3462023/haademeeste-arendab-ufoturismi">Pärnu Postimees</a>). Lisaks sellele on MGP käinud tellimusena filmimas näiteks 2013. aasta Pärnu Jääfestivali ning on aidanud korraldada igaaastast Eesti filmifestivali KSG NUI.
+                        <br> Lisaks tellimustöödele tegeleme ka pikemate filmiprojektidega. Aastal 2016 valmis MoonGold Productions'il täispikk dokumentaalfilm "Häädemeeste fenomen", mis jutustab loo müstilistest Häädemeeste nähtustest ning toob vaatajateni sealsete elanike ning tunnistajate kirjeldused kokkupuutest "tundmatuga". "Häädemeeste fenomen" osutus väga edukaks - toimus esilinastus Coca-Cola Plaza's, teleesilinastus telekanalil TV3 (19.05.2016) ning filmi kajastati ka kõikides suuremates meediaväljaannetes (<a href="https://kultuur.postimees.ee/3461375/haademeeste-fenomen-ufod-veensid-jumalad-mitte" target="_blank">Postimees</a>, <a href="https://ekspress.delfi.ee/elu/ivo-kolts-nuud-on-toestatud-et-teispoolsus-on-toesti-olemas?id=73347205" target="_blank">Eesti Ekspress</a>, <a href="https://www.ohtuleht.ee/733785/ufod-haademeestel-uks-roovis-memme-teine-pogenes-hirmuga-ahju" target="_blank">Õhtuleht</a>, <a href="https://parnu.postimees.ee/3462023/haademeeste-arendab-ufoturismi" target="_blank">Pärnu Postimees</a>). Lisaks sellele on MGP käinud tellimusena filmimas näiteks 2013. aasta Pärnu Jääfestivali ning on aidanud korraldada igaaastast Eesti filmifestivali KSG NUI.
                         <br>
                         <br> Aktiivne mõttevahetus on meile väga tähtis. Hindame kõrgelt tagasisidet nii koostööpartneritelt kui ka meie vaatajatelt.
                     </p>
@@ -408,10 +464,16 @@
         </div>
     </footer>
 
+    <!-- jQuery scripts -->
     <script data-require="jquery@*" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="js/script.js"></script>
+    <!-- Font Awesome scripts -->
     <script src="https://use.fontawesome.com/ff305e94c4.js"></script>
+    <!-- Slick carousel scripts -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Bootstrap scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Custom scripts -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
