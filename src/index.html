@@ -22,16 +22,25 @@
 </head>
 
 <body>
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav id="navbar"
+         class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#top">
+            <a class="navbar-brand"
+               href="#top">
                 <font color="gold">MoonGold</font>
                 <font color="white"> Productions</font>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div id="navbarSupportedContent" class="navbar-collapse collapse">
+            <div id="navbarSupportedContent"
+                 class="navbar-collapse collapse">
                 <ul class="navbar-nav navbar-right">
                     <li class="nav-item"><a class="nav-link" href="#news">Teated</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Teenused</a></li>
@@ -133,7 +142,7 @@
     <div class="news-background">
         <a class="anchor" id="news"></a>
         <div class="container news-container">
-            <div class="row">
+            <div class="row news-header-row">
                 <div class="col section-header-col">
                     <h2 class="section-header-text">Teated</h2>
                 </div>
@@ -379,7 +388,7 @@
                     </p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row faces-row">
                 <div class="col faces-col">
                     <figure class="image-circle-about-us">
                         <img class="site-img" src="img/Faces/joonas.jpg" alt="joonas">
@@ -418,43 +427,91 @@
         <div class="row">
             <div class="col">
                 <p class="lead">Võtke meiega ühendust!</p>
-                <form id="contact-form" method="POST" action="https://formspree.io/f/xbjqwrjp" class="row g-3 needs-validation" novalidate>
+                <form id="contact-form"
+                      method="POST"
+                      action="https://formspree.io/f/xbjqwrjp"
+                      class="row g-3 needs-validation"
+                      novalidate>
                     <div class="col-md-6">
-                        <label for="form_first_name" class="form-label">Eesnimi *</label>
-                        <input name="first_name" type="text" class="form-control" id="form_first_name" placeholder="Palun sisestage oma eesnimi *" required>
+                        <label for="form_first_name"
+                               class="form-label">
+                            Eesnimi *
+                        </label>
+                        <input name="first_name"
+                               type="text"
+                               class="form-control"
+                               id="form_first_name"
+                               placeholder="Palun sisestage oma eesnimi *"
+                               required>
                         <div class="invalid-feedback">
                             Eesnimi on kohustuslik.
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <label for="form_surname" class="form-label">Perekonnanimi *</label>
-                        <input name="surname" type="text" class="form-control" id="form_surname" placeholder="Palun sisestage oma perekonnanimi *" required>
+                        <label for="form_surname"
+                               class="form-label">
+                            Perekonnanimi *
+                        </label>
+                        <input name="surname"
+                               type="text"
+                               class="form-control"
+                               id="form_surname"
+                               placeholder="Palun sisestage oma perekonnanimi *"
+                               required>
                         <div class="invalid-feedback">
                             Perekonnanimi on kohustuslik.
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <label for="form_email" class="form-label">E-mail *</label>
-                        <input name="email" type="email" class="form-control" id="form_email" placeholder="Palun sisestage oma meiliaadress *" required>
+                        <label for="form_email"
+                               class="form-label">
+                            E-mail *
+                        </label>
+                        <input name="email"
+                               type="email"
+                               class="form-control"
+                               id="form_email"
+                               placeholder="Palun sisestage oma meiliaadress *"
+                               required>
                         <div class="invalid-feedback">
                             Kehtiv meiliaadress on kohustuslik.
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <label for="form_phone" class="form-label">Telefon</label>
-                        <input name="phone" type="tel" class="form-control" id="form_phone" placeholder="Palun sisestage oma telefoninumber">
+                        <label for="form_phone"
+                               class="form-label">
+                            Telefon
+                        </label>
+                        <input name="phone"
+                               type="tel"
+                               class="form-control"
+                               id="form_phone"
+                               placeholder="Palun sisestage oma telefoninumber">
                     </div>
                     <div class="col-12">
-                        <label for="form_message" class="form-label">Tekst *</label>
-                        <textarea name="message" type="email" class="form-control" id="form_message" rows="4" placeholder="Kiri meile *" required></textarea>
+                        <label for="form_message"
+                               class="form-label">
+                            Tekst *
+                        </label>
+                        <textarea name="message"
+                                  type="email"
+                                  class="form-control"
+                                  id="form_message"
+                                  rows="4"
+                                  placeholder="Kiri meile *"
+                                  required>
+                        </textarea>
                         <div class="invalid-feedback">
                             Palun jätke meile teade.
                         </div>
                     </div>
-                    <div class="col-12">
-                        <button class="btn btn-success btn-send" type="submit">Saada kiri</button>
+                    <div class="col-12 btn-col">
+                        <button class="btn btn-send"
+                                type="submit">
+                            Saada kiri
+                        </button>
                     </div>
-                    <div class="row">
+                    <div class="row contact-notice-row">
                         <div class="col-12">
                             <p class="text-muted"><strong>*</strong> Need on kohustuslikud väljad.</p>
                         </div>
@@ -470,7 +527,8 @@
                 <p class="footer-text">Eesti / Estonia, Registrikood: 80390469</p>
             </div>
             <div class="col footer-col">
-                <a href="#menu" class="btn btn-default to-top-btn">
+                <a href="#menu"
+                   class="btn btn-default to-top-btn">
                     <i class="fa fa-chevron-up"></i>
                 </a>
             </div>
