@@ -16,31 +16,24 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <!-- Import custom styles -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Lite YouTube Embedding -->
+    <link rel="stylesheet" type="text/css" href="css/lite-yt-embed.css">
 
     <!-- Let browser know website is optimized for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-    <nav id="navbar"
-         class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand"
-               href="#top">
+            <a class="navbar-brand" href="#top">
                 <font color="gold">MoonGold</font>
                 <font color="white"> Productions</font>
             </a>
-            <button class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div id="navbarSupportedContent"
-                 class="navbar-collapse collapse">
+            <div id="navbarSupportedContent" class="navbar-collapse collapse">
                 <ul class="navbar-nav navbar-right">
                     <li class="nav-item"><a class="nav-link" href="#news">Teated</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Teenused</a></li>
@@ -66,11 +59,11 @@
                             </figure>
                         </div>
                         <div class="col-sm-5">
-                            <h1 class="siteHeader1">
+                            <h1 class="site-header-mgp">
                                 <font color="gold">MoonGold</font>
                                 <font color="white"> Productions</font>
                             </h1>
-                            <h1 class="siteHeader2">
+                            <h1 class="site-header-moto">
                                 <font color="gold">Filmitegijad</font>
                                 <font color="white">aastast 2011</font>
                             </h1>
@@ -321,14 +314,12 @@
         </div>
         <div class="row">
             <div class="col-md-6 video-col mobile-video">
-                <div class="video_wrapper">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WbsT5mnrvqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+                <lite-youtube videoid="WbsT5mnrvqA" playlabel="Play: Keynote (Google I/O '18)">
+                </lite-youtube>
             </div>
             <div class="col-md-6 video-col">
-                <div class="video_wrapper">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fSZImcCGPgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+                <lite-youtube videoid="fSZImcCGPgo" playlabel="Play: Keynote (Google I/O '18)">
+                </lite-youtube>
             </div>
         </div>
         <div class="row">
@@ -339,14 +330,12 @@
         </div>
         <div class="row">
             <div class="col-md-6 video-col mobile-video">
-                <div class="video_wrapper">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1vTvDQsnCG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+                <lite-youtube videoid="1vTvDQsnCG4" playlabel="Play: Keynote (Google I/O '18)">
+                </lite-youtube>
             </div>
             <div class="col-md-6 video-col">
-                <div class="video_wrapper">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fs4O_wN4y5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+                <lite-youtube videoid="fs4O_wN4y5U" playlabel="Play: Keynote (Google I/O '18)">
+                </lite-youtube>
             </div>
         </div>
         <div id="naidisprojektid" class="row">
@@ -356,14 +345,12 @@
         </div>
         <div class="row">
             <div class="col-md-6 video-col bottom-video-col">
-                <div class="video_wrapper">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/x6DYbjnDGDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+                <lite-youtube videoid="x6DYbjnDGDQ" playlabel="Play: Keynote (Google I/O '18)">
+                </lite-youtube>
             </div>
             <div class="col-md-6 video-col bottom-video-col">
-                <div class="video_wrapper">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/X7UdC-K_DJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+                <lite-youtube videoid="X7UdC-K_DJ4" playlabel="Play: Keynote (Google I/O '18)">
+                </lite-youtube>
             </div>
         </div>
     </div>
@@ -427,87 +414,52 @@
         <div class="row">
             <div class="col">
                 <p class="lead">Võtke meiega ühendust!</p>
-                <form id="contact-form"
-                      method="POST"
-                      action="https://formspree.io/f/xbjqwrjp"
-                      class="row g-3 needs-validation"
-                      novalidate>
+                <form id="contact-form" method="POST" action="https://formspree.io/f/xbjqwrjp" class="row g-3 needs-validation" novalidate>
                     <div class="col-md-6">
-                        <label for="form_first_name"
-                               class="form-label">
+                        <label for="form_first_name" class="form-label">
                             Eesnimi *
                         </label>
-                        <input name="first_name"
-                               type="text"
-                               class="form-control"
-                               id="form_first_name"
-                               placeholder="Palun sisestage oma eesnimi *"
-                               required>
+                        <input name="first_name" type="text" class="form-control" id="form_first_name" placeholder="Palun sisestage oma eesnimi *" required>
                         <div class="invalid-feedback">
                             Eesnimi on kohustuslik.
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <label for="form_surname"
-                               class="form-label">
+                        <label for="form_surname" class="form-label">
                             Perekonnanimi *
                         </label>
-                        <input name="surname"
-                               type="text"
-                               class="form-control"
-                               id="form_surname"
-                               placeholder="Palun sisestage oma perekonnanimi *"
-                               required>
+                        <input name="surname" type="text" class="form-control" id="form_surname" placeholder="Palun sisestage oma perekonnanimi *" required>
                         <div class="invalid-feedback">
                             Perekonnanimi on kohustuslik.
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <label for="form_email"
-                               class="form-label">
+                        <label for="form_email" class="form-label">
                             E-mail *
                         </label>
-                        <input name="email"
-                               type="email"
-                               class="form-control"
-                               id="form_email"
-                               placeholder="Palun sisestage oma meiliaadress *"
-                               required>
+                        <input name="email" type="email" class="form-control" id="form_email" placeholder="Palun sisestage oma meiliaadress *" required>
                         <div class="invalid-feedback">
                             Kehtiv meiliaadress on kohustuslik.
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <label for="form_phone"
-                               class="form-label">
+                        <label for="form_phone" class="form-label">
                             Telefon
                         </label>
-                        <input name="phone"
-                               type="tel"
-                               class="form-control"
-                               id="form_phone"
-                               placeholder="Palun sisestage oma telefoninumber">
+                        <input name="phone" type="tel" class="form-control" id="form_phone" placeholder="Palun sisestage oma telefoninumber">
                     </div>
                     <div class="col-12">
-                        <label for="form_message"
-                               class="form-label">
+                        <label for="form_message" class="form-label">
                             Tekst *
                         </label>
-                        <textarea name="message"
-                                  type="email"
-                                  class="form-control"
-                                  id="form_message"
-                                  rows="4"
-                                  placeholder="Kiri meile *"
-                                  required>
+                        <textarea name="message" type="email" class="form-control" id="form_message" rows="4" placeholder="Kiri meile *" required>
                         </textarea>
                         <div class="invalid-feedback">
                             Palun jätke meile teade.
                         </div>
                     </div>
                     <div class="col-12 btn-col">
-                        <button class="btn btn-send"
-                                type="submit">
+                        <button class="btn btn-send" type="submit">
                             Saada kiri
                         </button>
                     </div>
@@ -527,8 +479,7 @@
                 <p class="footer-text">Eesti / Estonia, Registrikood: 80390469</p>
             </div>
             <div class="col footer-col">
-                <a href="#menu"
-                   class="btn btn-default to-top-btn">
+                <a href="#menu" class="btn btn-default to-top-btn">
                     <i class="fa fa-chevron-up"></i>
                 </a>
             </div>
@@ -550,6 +501,8 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Import Bootstrap scripts -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Import Lite YouTube Embedding scripts -->
+    <script type="text/javascript" src="js/lite-yt-embed.js"></script>
     <!-- Import custom scripts -->
     <script type="text/javascript" src="js/script.js"></script>
 </body>

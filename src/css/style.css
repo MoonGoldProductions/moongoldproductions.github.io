@@ -164,7 +164,11 @@ a:link {
 
 @media screen and (max-width: 767px) {
     .opening-screen-container {
-        height: 500px;
+        height: 600px;
+    }
+    
+    .opening-screen-title-container {
+        padding-left: 15px
     }
 
     .header-logo-col {
@@ -205,7 +209,7 @@ a.entry-btn:link:active {
 
 /* Header text */
 
-h1.siteHeader1 {
+h1.site-header-mgp {
     font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -213,14 +217,14 @@ h1.siteHeader1 {
     margin-top: 26px;
 }
 
-h1.siteHeader2 {
+h1.site-header-moto {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 2px;
 }
 
 @media screen and (max-width: 390px) {
-    h1.siteHeader1 {
+    h1.site-header-mgp {
         font-size: 30px;
     }
 }
@@ -658,12 +662,6 @@ p.services-text {
     margin-bottom: 60px;
 }
 
-.video_wrapper {
-    /* Keep responsive aspect ratio 16:9 for videos */
-    position: relative;
-    padding-bottom: 56.25%;
-}
-
 iframe {
     position: absolute;
     top: 0;
@@ -685,7 +683,7 @@ iframe {
 @media screen and (max-width: 767px) {
     .video-section-title {
         padding: 0;
-        padding-top: 10px;
+        padding-top: 35px;
         padding-left: 15px;
     }
 
