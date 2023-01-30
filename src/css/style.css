@@ -158,12 +158,23 @@ a:link {
 .header-logo-col {
     margin-right: -1%;
     margin-left: 5%;
+    margin-top: -7px;
 }
 
 .header-logo {
-    height: 110px;
+    height: 155px;
     width: auto;
     margin: 0;
+}
+
+@media screen and (max-width: 1150px) {
+    .header-logo-col {
+        margin-top: 0;
+    }
+
+    .header-logo {
+        height: 110px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -214,7 +225,7 @@ a.entry-btn:link:active {
 /* Header text */
 
 h1.site-header-mgp {
-    font-size: 35px;
+    font-size: 45px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     margin-bottom: 5px;
@@ -222,14 +233,18 @@ h1.site-header-mgp {
 }
 
 h1.site-header-moto {
-    font-size: 15px;
+    font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 2px;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 1150px) {
     h1.site-header-mgp {
         font-size: 30px;
+    }
+
+    h1.site-header-moto {
+        font-size: 15px;
     }
 }
 
