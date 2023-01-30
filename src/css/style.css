@@ -574,11 +574,6 @@ p.menu-text-link {
     .mobile-video-title {
         font-size: 20px;
     }
-
-    .video-col {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
 }
 
 
@@ -738,7 +733,6 @@ a.to-top-btn:link:active {
 
 @media screen and (max-width: 767px) {
     .to-top-btn {
-        margin-bottom: 10px;
-        margin-top: 10px;
+        display: none;
     }
 }
