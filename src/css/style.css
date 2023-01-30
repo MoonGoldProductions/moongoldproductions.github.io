@@ -91,7 +91,11 @@ a:link {
 
 .opening-screen-video-container {
     position: absolute;
+    top: 0;
+    bottom: 0;
     width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .opening-screen-video-container video {
@@ -166,7 +170,7 @@ a:link {
     .opening-screen-container {
         height: 600px;
     }
-    
+
     .opening-screen-title-container {
         padding-left: 15px
     }
@@ -236,6 +240,8 @@ h1.site-header-moto {
     padding: 0;
     padding-top: 80px;
     padding-bottom: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
     max-width: 1300px;
 }
 
@@ -284,6 +290,7 @@ p.menu-text-link {
 }
 
 @media screen and (max-width: 767px) {
+
     /* Hide menu for mobile */
     .menu-row {
         display: none;
@@ -330,7 +337,7 @@ p.menu-text-link {
 }
 
 .news-background {
-    background: url('/img/MGP/MGP_taust_blur.png') no-repeat center center scroll;
+    background: url('/img/mgp/MGP_taust_blur.png') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -429,7 +436,7 @@ p.menu-text-link {
 }
 
 .quote-bg {
-    background: url('/img/Style/Taust%201.jpg') no-repeat center center;
+    background: url('/img/style/loojang.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -507,131 +514,6 @@ p.menu-text-link {
     .quote-author {
         font-size: 17px;
         margin-left: 30%;
-    }
-}
-
-
-/* Services */
-
-.services-background {
-    background-color: lightgray;
-    padding-bottom: 20px;
-}
-
-.services-col {
-    text-align: center;
-}
-
-.services-col-middle {
-    text-align: center;
-    border-style: solid;
-    border-width: 0;
-    border-left-width: 1px;
-    border-right-width: 1px;
-    border-color: gray;
-}
-
-p.services-title {
-    font-size: 25px;
-}
-
-p.services-head-text {
-    border-width: 0;
-    border-top-width: 1px;
-    border-style: solid;
-    border-color: gray;
-    font-size: 20px;
-    text-align: left;
-    padding: 0;
-    padding-top: 30px;
-    padding-bottom: 10px;
-}
-
-.image-circle-services {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-p.services-text {
-    font-size: 17px;
-    text-align: left;
-    padding: 0;
-    padding-left: 20px;
-    padding-top: 15px;
-}
-
-.services-bullet li:before {
-    /* Using a Font Awesome icons as the bullet points */
-    content: "\f054";
-    font-family: 'FontAwesome';
-    font-size: 17px;
-    margin-top: 4px;
-    color: gold;
-}
-
-.services-bullet li {
-    list-style-type: none;
-    text-align: left;
-    font-size: 17px;
-    font-weight: bold;
-}
-
-.services-bullet {
-    margin: 0;
-    margin-top: 35px;
-    padding: 0;
-    padding-left: 20px;
-}
-
-@media screen and (max-width: 767px) {
-    p.services-head-text {
-        font-size: 14px;
-    }
-
-    p.services-text {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    .services-col {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-
-    .services-col-middle {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        border-style: none;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    p.services-head-text {
-        font-size: 17px;
-    }
-
-    p.services-title {
-        font-size: 22px;
-    }
-
-    p.services-text {
-        font-size: 14px;
-    }
-
-    .services-bullet li {
-        font-size: 14px;
-    }
-
-    .image-circle-services {
-        width: 150px;
-        height: 150px;
     }
 }
 
