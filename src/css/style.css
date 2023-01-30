@@ -337,7 +337,7 @@ p.menu-text-link {
 }
 
 .news-background {
-    background: url('/img/mgp/MGP_taust_blur.png') no-repeat center center scroll;
+    background: url('/img/moongold/MGP_taust_blur.png') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -436,7 +436,7 @@ p.menu-text-link {
 }
 
 .quote-bg {
-    background: url('/img/style/loojang.jpg') no-repeat center center;
+    background: url('/img/misc/loojang.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
