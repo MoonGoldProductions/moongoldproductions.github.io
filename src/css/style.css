@@ -56,9 +56,17 @@ a:link {
     font-size: 40px;
 }
 
+.section-padding {
+    padding-top: 40px !important;
+}
+
 @media screen and (max-width: 767px) {
     .section-header-text {
         font-size: 30px;
+    }
+
+    .section-padding {
+        padding-top: 35px !important;
     }
 }
 
@@ -406,7 +414,7 @@ p.menu-text-link {
 
 .news-date {
     font-size: 15px;
-    font-weight: lighter;
+    font-weight: 350;
     color: black;
 }
 
@@ -544,10 +552,10 @@ p.menu-text-link {
     border-color: gray;
 }
 
-.video-section-title {
+.video-section-text {
     padding: 3px;
     padding-left: 15px;
-    padding-top: 40px;
+    padding-top: 45px;
 }
 
 .bottom-video-col {
@@ -565,9 +573,9 @@ p.menu-text-link {
 }
 
 @media screen and (max-width: 767px) {
-    .video-section-title {
+    .video-section-text {
         padding: 0;
-        padding-top: 35px;
+        padding-top: 40px;
         padding-left: 15px;
     }
 
@@ -594,7 +602,6 @@ p.menu-text-link {
 }
 
 .faces-row {
-    padding-top: 40px;
     padding-bottom: 40px;
 }
 
@@ -617,7 +624,6 @@ p.menu-text-link {
 .about-us-text {
     text-align: left;
     font-size: 15px;
-    padding-top: 40px;
 }
 
 .faces-text {
@@ -655,7 +661,6 @@ p.menu-text-link {
 }
 
 .lead {
-    padding-top: 40px;
     padding-bottom: 20px;
 }
 
